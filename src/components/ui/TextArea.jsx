@@ -8,7 +8,7 @@ const TextArea = ({ label, placeholder, ...rest }) => {
       </label>
 
       <textarea
-        className=" relative py-2.5 px-3.5 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] focus:outline-none"
+        className="  py-2.5 px-3.5 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] focus:outline-none"
         {...rest}
         placeholder={placeholder}
       />
