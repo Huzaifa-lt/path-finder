@@ -2,7 +2,7 @@ import React from "react";
 
 const StepsTabs = () => {
   return (
-    <div className=" pl-6 py-3 flex items-center gap-2 border-b border-[#E7E9EB]">
+    <div className=" pl-6 py-3 bg-white flex items-center gap-2 sticky top-0 border-b border-[#E7E9EB]">
       <button className=" py-2 px-3 bg-[#F0F7E2] border border-[#8FC521] rounded-md text-xs font-normal text-black">
         General
       </button>

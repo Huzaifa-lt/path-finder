@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className=" bg-white relative z-50">
+    <header className=" bg-white relative z-20 ">
       <nav className=" grow py-[7px] pr-6  z-30  flex gap-[320px] justify-end border-b border-[#F0F1F3]   ">
         <div className="   py-1.5 px-3 rounded-lg flex items-center gap-2 border bg-white  border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
           <span>
