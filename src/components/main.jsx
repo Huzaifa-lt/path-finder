@@ -5,6 +5,9 @@ import Stepper from "./Stepper";
 import StepsAction from "./StepsAction";
 import Education from "./dashboard/education/Education";
 import { Button } from "./ui/button";
+import Employment from "./dashboard/employment/Employment";
+import Certificates from "./dashboard/certificates/Certificates";
+import Flying from "./dashboard/flying/Flying";
 
 const handleComplete = () => {
   console.log("Form completed!");
@@ -131,7 +134,10 @@ const Main = () => {
 
       <div>
         {/* <Stepper /> */}
-        <Education />
+        {/* <Education /> */}
+        {/* <Employment /> */}
+        {/* <Certificates /> */}
+        <Flying />
       </div>
 
       <StepsAction />
