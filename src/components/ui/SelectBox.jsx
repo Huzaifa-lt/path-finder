@@ -8,20 +8,30 @@ import React from "react";
 //   SelectTrigger,
 //   SelectValue,
 // } from "../../../@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const SelectBox = ({ label }) => {
   return (
-    <div className="flex flex-col">
+    <div className="  flex flex-col">
       <label className="mb-1.5 text-sm font-normal text-[#344054]" htmlFor="">
         {label}
       </label>
-      <select
-        name=""
-        id=""
-        className=" py-2 px-3.5 text-[#717B8A] bg-transparent rounded-lg border  border-[#E7E9EB] shadow-sm shadow-[#1018280D] focus:outline-none"
-      >
-        <option value="----">----</option>
-      </select>
+      <Select>
+        <SelectTrigger className="">
+          <SelectValue placeholder="---" />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="light">Light</SelectItem>
+          <SelectItem value="dark">Dark</SelectItem>
+          <SelectItem value="system">System</SelectItem>
+        </SelectContent>
+      </Select>
     </div>
     // <Select>
     //   <SelectTrigger className="w-[180px]">
