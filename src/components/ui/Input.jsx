@@ -6,8 +6,9 @@ const Input = ({ label, type, ...rest }) => {
       <label className=" mb-1.5 text-sm font-normal text-[#344054] " htmlFor="">
         {label}
       </label>
+
       <input
-        className=" py-1.5 px-3.5 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] focus:outline-none"
+        className=" relative py-1.5 px-3.5 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] focus:outline-none"
         type={type}
         {...rest}
         placeholder="----"

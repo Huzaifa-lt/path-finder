@@ -1,8 +1,8 @@
 import React from "react";
-import Input from "./ui/Input";
-import { DatePicker } from "./ui/DatePicker";
-import SelectBox from "./ui/SelectBox";
-import RadioBox from "./ui/RadioBox";
+import Input from "../../../ui/Input";
+import { DatePicker } from "../../../ui/DatePicker";
+import SelectBox from "../../../ui/SelectBox";
+import RadioBox from "../../../ui/RadioBox";
 
 const General = () => {
   return (

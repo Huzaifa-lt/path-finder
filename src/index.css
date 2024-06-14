@@ -2,3 +2,12 @@
   @tailwind components;
   @tailwind utilities;
   
+
+  /* *{
+    list-style: disc;
+  } */
+
+  .main{
+     width: calc(100% - 280px);
+     margin-left: auto;
+  }

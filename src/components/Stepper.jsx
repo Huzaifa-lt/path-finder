@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 import "./stepper.css";
 import StepsTabs from "./StepsTabs";
-import General from "./General";
+import General from "./dashboard/Personel-info/general/General";
+import Contact from "./dashboard/Personel-info/contact/Contact";
+import Emergency from "./dashboard/Personel-info/emergency/Emergency";
+import Demographics from "./dashboard/Personel-info/demographics/Demographics";
+import Disability from "./dashboard/Personel-info/disability/Disability";
+import Tsr from "./dashboard/Personel-info/tsr/Tsr";
+import NonTsrCriminal from "./dashboard/Personel-info/non-tsr-criminal/NonTsrCriminal";
+import Veteran from "./dashboard/Personel-info/veteran/Veteran";
+import AddressHistory from "./dashboard/address-history/AddressHistory";
 // import { TiTick } from "react-icons/ti";
 const Stepper = () => {
   //   const steps = ["Customer Info", "Shipping Info", "Payment", "Step 4"];
@@ -112,7 +120,15 @@ const Stepper = () => {
 
       <div className=" mt-5 p-6 mx-6 rounded-lg border border-[#E4E7EC] ">
         <h3 className=" text-xl font-medium text-black">General Information</h3>
-        <General />
+        {/* <General /> */}
+        <Contact />
+        {/* <Emergency /> */}
+        {/* <Demographics /> */}
+        {/* <Disability /> */}
+        {/* <Tsr /> */}
+        {/* <NonTsrCriminal /> */}
+        {/* <Veteran /> */}
+        {/* <AddressHistory /> */}
         <div className="  mx-6  flex justify-end">
           <button className=" mt-4 py-2 px-3 rounded-lg  flex items-center justify-end gap-1 bg-[#F0F7E2] border border-[#8FC521] ">
             Next:

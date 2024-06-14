@@ -32,7 +32,7 @@ export function ProgressCircleBar() {
 
 const Main = () => {
   return (
-    <div>
+    <div className=" h-full">
       <h2 className="  pl-6 py-5 border-b border-[#F0F1F3] ">
         Personal Information
       </h2>

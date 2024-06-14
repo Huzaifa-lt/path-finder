@@ -2,7 +2,7 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <aside className=" w-[280px] relative z-30 bg-white border-r border-[#F0F1F3]  h-screen flex flex-col justify-between  ">
+    <aside className=" w-[280px]  fixed left-0 z-50 bg-white border-r border-[#F0F1F3]  h-screen flex flex-col justify-between  ">
       <div>
         <div className=" px-5 pt-1 pb-[3px]  border-b  border-[#F0F1F3]  ">
           <svg
