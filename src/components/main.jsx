@@ -8,6 +8,7 @@ import { Button } from "./ui/button";
 import Employment from "./dashboard/employment/Employment";
 import Certificates from "./dashboard/certificates/Certificates";
 import Flying from "./dashboard/flying/Flying";
+import Refrences from "./dashboard/refrences/Refrences";
 
 const handleComplete = () => {
   console.log("Form completed!");
@@ -137,7 +138,8 @@ const Main = () => {
         {/* <Education /> */}
         {/* <Employment /> */}
         {/* <Certificates /> */}
-        <Flying />
+        {/* <Flying /> */}
+        <Refrences />
       </div>
 
       <StepsAction />
