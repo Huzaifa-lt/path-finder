@@ -8,7 +8,7 @@ const Input = ({ label, type, ...rest }) => {
       </label>
 
       <input
-        className=" relative py-1.5 px-3.5 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] focus:outline-none"
+        className="  py-1.5 px-3.5 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] focus:outline-none"
         type={type}
         {...rest}
         placeholder="----"
