@@ -4,25 +4,44 @@ const FlyingSummaryTable = () => {
   return (
     <table className=" w-full  ">
       <tr className=" bg-[#F9FAFB]">
-        <th>Employer</th>
-        <th>Employed Dates</th>
-        <th>Address</th>
-        <th>Position</th>
-        <th>Telephone</th>
-        <th>Supervisor Name</th>
-        <th>Reason for Leaving</th>
+        <th>Flying Totals</th>
+        <th>Rating category</th>
+        <th>Class</th>
+        <th>Aircraft category</th>
+        <th>Engines</th>
+        <th>Power</th>
+        <th>Time</th>
+        <th>Date</th>
         <th>Actions</th>
       </tr>
       <tr>
-        <td>US Air Force</td>
-        <td>9/15/2020</td>
-        <td>1658 D Street, Joint...</td>
-        <td>C-32 First Pilot and Chief...</td>
+        <td>Boeing E-3 B/C/G</td>
+        <td>Airplane</td>
+        <td>Multi-Engine Land</td>
+        <td>Military - Transport</td>
         <td>301-858-8969</td>
-        <td>Lt Col Nicholas</td>
-        <td>Transitioning from...</td>
+        <td>4</td>
+        <td>2080</td>
+        <td>8/2020</td>
         <td>
-          <div className=" flex justify-center">
+          <div className=" flex items-center gap-3">
+            <button className=" cursor-pointer">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.1667 2.50005C14.3856 2.28118 14.6455 2.10756 14.9314 1.98911C15.2174 1.87066 15.5239 1.80969 15.8334 1.80969C16.1429 1.80969 16.4494 1.87066 16.7354 1.98911C17.0214 2.10756 17.2812 2.28118 17.5001 2.50005C17.719 2.71892 17.8926 2.97875 18.011 3.26472C18.1295 3.55069 18.1904 3.85719 18.1904 4.16671C18.1904 4.47624 18.1295 4.78274 18.011 5.06871C17.8926 5.35468 17.719 5.61451 17.5001 5.83338L6.25008 17.0834L1.66675 18.3334L2.91675 13.75L14.1667 2.50005Z"
+                  stroke="#687382"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
             <button>
               <svg
                 width="20"
@@ -44,15 +63,33 @@ const FlyingSummaryTable = () => {
         </td>
       </tr>
       <tr>
-        <td>US Air Force</td>
-        <td>9/15/2020</td>
-        <td>1658 D Street, Joint...</td>
-        <td>C-32 First Pilot and Chief...</td>
+        <td>Boeing E-3 B/C/G</td>
+        <td>Airplane</td>
+        <td>Multi-Engine Land</td>
+        <td>Military - Transport</td>
         <td>301-858-8969</td>
-        <td>Lt Col Nicholas</td>
-        <td>Transitioning from...</td>
+        <td>4</td>
+        <td>2080</td>
+        <td>8/2020</td>
         <td>
-          <div className=" flex justify-center">
+          <div className=" flex items-center gap-3">
+            <button className=" cursor-pointer">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.1667 2.50005C14.3856 2.28118 14.6455 2.10756 14.9314 1.98911C15.2174 1.87066 15.5239 1.80969 15.8334 1.80969C16.1429 1.80969 16.4494 1.87066 16.7354 1.98911C17.0214 2.10756 17.2812 2.28118 17.5001 2.50005C17.719 2.71892 17.8926 2.97875 18.011 3.26472C18.1295 3.55069 18.1904 3.85719 18.1904 4.16671C18.1904 4.47624 18.1295 4.78274 18.011 5.06871C17.8926 5.35468 17.719 5.61451 17.5001 5.83338L6.25008 17.0834L1.66675 18.3334L2.91675 13.75L14.1667 2.50005Z"
+                  stroke="#687382"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
             <button>
               <svg
                 width="20"
@@ -74,15 +111,33 @@ const FlyingSummaryTable = () => {
         </td>
       </tr>
       <tr>
-        <td>US Air Force</td>
-        <td>9/15/2020</td>
-        <td>1658 D Street, Joint...</td>
-        <td>C-32 First Pilot and Chief...</td>
+        <td>Boeing E-3 B/C/G</td>
+        <td>Airplane</td>
+        <td>Multi-Engine Land</td>
+        <td>Military - Transport</td>
         <td>301-858-8969</td>
-        <td>Lt Col Nicholas</td>
-        <td>Transitioning from...</td>
+        <td>4</td>
+        <td>2080</td>
+        <td>8/2020</td>
         <td>
-          <div className=" flex justify-center">
+          <div className=" flex items-center gap-3">
+            <button className=" cursor-pointer">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.1667 2.50005C14.3856 2.28118 14.6455 2.10756 14.9314 1.98911C15.2174 1.87066 15.5239 1.80969 15.8334 1.80969C16.1429 1.80969 16.4494 1.87066 16.7354 1.98911C17.0214 2.10756 17.2812 2.28118 17.5001 2.50005C17.719 2.71892 17.8926 2.97875 18.011 3.26472C18.1295 3.55069 18.1904 3.85719 18.1904 4.16671C18.1904 4.47624 18.1295 4.78274 18.011 5.06871C17.8926 5.35468 17.719 5.61451 17.5001 5.83338L6.25008 17.0834L1.66675 18.3334L2.91675 13.75L14.1667 2.50005Z"
+                  stroke="#687382"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
             <button>
               <svg
                 width="20"
@@ -104,15 +159,33 @@ const FlyingSummaryTable = () => {
         </td>
       </tr>
       <tr>
-        <td>US Air Force</td>
-        <td>9/15/2020</td>
-        <td>1658 D Street, Joint...</td>
-        <td>C-32 First Pilot and Chief...</td>
+        <td>Boeing E-3 B/C/G</td>
+        <td>Airplane</td>
+        <td>Multi-Engine Land</td>
+        <td>Military - Transport</td>
         <td>301-858-8969</td>
-        <td>Lt Col Nicholas</td>
-        <td>Transitioning from...</td>
+        <td>4</td>
+        <td>2080</td>
+        <td>8/2020</td>
         <td>
-          <div className=" flex justify-center">
+          <div className=" flex items-center gap-3">
+            <button className=" cursor-pointer">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.1667 2.50005C14.3856 2.28118 14.6455 2.10756 14.9314 1.98911C15.2174 1.87066 15.5239 1.80969 15.8334 1.80969C16.1429 1.80969 16.4494 1.87066 16.7354 1.98911C17.0214 2.10756 17.2812 2.28118 17.5001 2.50005C17.719 2.71892 17.8926 2.97875 18.011 3.26472C18.1295 3.55069 18.1904 3.85719 18.1904 4.16671C18.1904 4.47624 18.1295 4.78274 18.011 5.06871C17.8926 5.35468 17.719 5.61451 17.5001 5.83338L6.25008 17.0834L1.66675 18.3334L2.91675 13.75L14.1667 2.50005Z"
+                  stroke="#687382"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
             <button>
               <svg
                 width="20"
@@ -134,15 +207,33 @@ const FlyingSummaryTable = () => {
         </td>
       </tr>
       <tr>
-        <td>US Air Force</td>
-        <td>9/15/2020</td>
-        <td>1658 D Street, Joint...</td>
-        <td>C-32 First Pilot and Chief...</td>
+        <td>Boeing E-3 B/C/G</td>
+        <td>Airplane</td>
+        <td>Multi-Engine Land</td>
+        <td>Military - Transport</td>
         <td>301-858-8969</td>
-        <td>Lt Col Nicholas</td>
-        <td>Transitioning from...</td>
+        <td>4</td>
+        <td>2080</td>
+        <td>8/2020</td>
         <td>
-          <div className=" flex justify-center">
+          <div className=" flex items-center gap-3">
+            <button className=" cursor-pointer">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.1667 2.50005C14.3856 2.28118 14.6455 2.10756 14.9314 1.98911C15.2174 1.87066 15.5239 1.80969 15.8334 1.80969C16.1429 1.80969 16.4494 1.87066 16.7354 1.98911C17.0214 2.10756 17.2812 2.28118 17.5001 2.50005C17.719 2.71892 17.8926 2.97875 18.011 3.26472C18.1295 3.55069 18.1904 3.85719 18.1904 4.16671C18.1904 4.47624 18.1295 4.78274 18.011 5.06871C17.8926 5.35468 17.719 5.61451 17.5001 5.83338L6.25008 17.0834L1.66675 18.3334L2.91675 13.75L14.1667 2.50005Z"
+                  stroke="#687382"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
             <button>
               <svg
                 width="20"
