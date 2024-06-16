@@ -16,15 +16,15 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const SelectBox = ({ label }) => {
+const SelectBox = ({ label, className, placeholder }) => {
   return (
     <div className="  flex flex-col">
       <label className="mb-1.5 text-sm font-normal text-[#344054]" htmlFor="">
         {label}
       </label>
       <Select>
-        <SelectTrigger className="">
-          <SelectValue placeholder="---" />
+        <SelectTrigger className={className}>
+          <SelectValue placeholder={placeholder} />
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="light">Light</SelectItem>

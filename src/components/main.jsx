@@ -9,6 +9,7 @@ import Employment from "./dashboard/employment/Employment";
 import Certificates from "./dashboard/certificates/Certificates";
 import Flying from "./dashboard/flying/Flying";
 import Refrences from "./dashboard/refrences/Refrences";
+import FileUploads from "./dashboard/file-uploads/FileUploads";
 
 const handleComplete = () => {
   console.log("Form completed!");
@@ -45,7 +46,7 @@ const Main = () => {
 
       <div className=" py-6 px-6 relative flex items-center justify-between gap-12 border-b border-[#F0F1F3]">
         <div className=" relative flex flex-col items-center">
-          <button className=" p-[3.63px] bg-[#E48B3D] size-[46px] rounded-full before:content-[''] before:w-[200px] before:h-0.5 before:bg-[#C6CAD0] before:absolute before:left-[60%] before:top-[30%] before:-z-10   ">
+          <button className=" p-[3.63px] bg-[#E48B3D] size-[46px] rounded-full before:content-[''] before:w-[200px] before:h-0.5 before:bg-[#C6CAD0]  before:absolute before:left-[60%] before:top-[30%] before:-z-10   ">
             <div className=" size-[38.74px] bg-transparent border-[4px] border-white border-opacity-20 rounded-full text-xs font-semibold flex items-center justify-center text-white  ">
               0%
             </div>
@@ -139,7 +140,8 @@ const Main = () => {
         {/* <Employment /> */}
         {/* <Certificates /> */}
         {/* <Flying /> */}
-        <Refrences />
+        {/* <Refrences /> */}
+        <FileUploads />
       </div>
 
       <StepsAction />

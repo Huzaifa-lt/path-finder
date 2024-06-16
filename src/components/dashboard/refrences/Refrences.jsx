@@ -2,6 +2,8 @@ import React from "react";
 import RefrencesTabs from "./RefrencesTabs";
 import RefrencesSummary from "./RefrencesSummary";
 import GeneralRefrences from "./GeneralRefrences";
+import RefrencesPopup from "./RefrencesPopup";
+import UnemployedRefrence from "./UnemployedRefrence";
 
 const Refrences = () => {
   return (
@@ -10,7 +12,9 @@ const Refrences = () => {
 
       <div className="mt-5 mx-6 ">
         {/* <RefrencesSummary /> */}
-        <GeneralRefrences />
+        {/* <GeneralRefrences /> */}
+        {/* <RefrencesPopup /> */}
+        <UnemployedRefrence />
       </div>
     </>
   );

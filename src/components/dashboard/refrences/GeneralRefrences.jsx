@@ -35,7 +35,6 @@ const GeneralRefrences = () => {
         <div className=" py-5 px-6">
           <h2 className=" text-lg font-medium text-[#2E2E2E]">References</h2>
         </div>
-
         <table className=" w-full">
           <tr className=" bg-[#F9FAFB]">
             <th>Name</th>
@@ -44,38 +43,33 @@ const GeneralRefrences = () => {
             <th>Beginning</th>
             <th>Actions</th>
           </tr>
-          <tr className="  ">
-            <td>
-              <div className="pt-[67px] pb-[75px] flex flex-col items-center justify-center gap-[22px] ">
-                <h6 className=" text-lg font-medium text-[#2E2E2E]">
-                  You don’t have any reference yet, add your first reference
-                  below
-                </h6>
-
-                <button className=" py-2 px-3 bg-[#F0F7E2] border border-[#8FC521] rounded-md text-sm font-medium text-black flex items-center gap-1">
-                  <span>
-                    <svg
-                      width="17"
-                      height="17"
-                      viewBox="0 0 17 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8.50016 3.83398V13.1673M3.8335 8.50065H13.1668"
-                        stroke="#8FC521"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>{" "}
-                  Add reference
-                </button>
-              </div>
-            </td>
-          </tr>
         </table>
+        <div className="pt-[67px] pb-[75px] flex flex-col items-center justify-center gap-[22px] ">
+          <h6 className=" text-lg font-medium text-[#2E2E2E]">
+            You don’t have any reference yet, add your first reference below
+          </h6>
+
+          <button className=" py-2 px-3 bg-[#F0F7E2] border border-[#8FC521] rounded-md text-sm font-medium text-black flex items-center gap-1">
+            <span>
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.50016 3.83398V13.1673M3.8335 8.50065H13.1668"
+                  stroke="#8FC521"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </span>{" "}
+            Add reference
+          </button>
+        </div>
       </div>
 
       <div className=" mt-5  flex justify-end">
