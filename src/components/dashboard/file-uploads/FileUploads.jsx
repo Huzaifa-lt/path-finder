@@ -7,7 +7,7 @@ const FileUploads = () => {
       <div className=" py-5 px-6">
         <div className=" flex items-center justify-between">
           <h2 className=" text-lg font-medium text-[#2E2E2E]">
-            Flying Time Summary
+            Upload interview documents
           </h2>
           <button className=" py-2 px-3 bg-[#8FC521] text-sm font-medium shadow-sm text-white shadow-[#1018280D] rounded-lg flex items-center gap-1 ">
             <span>

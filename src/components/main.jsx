@@ -46,7 +46,7 @@ const Main = () => {
 
       <div className=" py-6 px-6 relative flex items-center justify-between gap-12 border-b border-[#F0F1F3]">
         <div className=" relative flex flex-col items-center">
-          <button className=" p-[3.63px] bg-[#E48B3D] size-[46px] rounded-full before:content-[''] before:w-[200px] before:h-0.5 before:bg-[#C6CAD0]  before:absolute before:left-[60%] before:top-[30%] before:-z-10   ">
+          <button className=" p-[3.63px] bg-[#E48B3D] size-[46px] rounded-full before:content-['']  before:h-0.5 before:bg-[#C6CAD0]  before:absolute before:left-[60%] before:top-[30%] before:-z-10  lg:before:w-full 2xl:before:w-[200px]  ">
             <div className=" size-[38.74px] bg-transparent border-[4px] border-white border-opacity-20 rounded-full text-xs font-semibold flex items-center justify-center text-white  ">
               0%
             </div>
@@ -56,7 +56,7 @@ const Main = () => {
           </p>
         </div>
         <div className=" relative flex flex-col items-center">
-          <button className=" p-[3.63px] bg-[#F0F7E2] size-[46px] rounded-full before:content-[''] before:w-[200px] before:h-0.5 before:bg-[#C6CAD0] before:absolute before:left-[60%] before:top-[30%] before:-z-10  ">
+          <button className=" p-[3.63px] bg-[#F0F7E2] size-[46px] rounded-full before:content-['']  before:h-0.5 before:bg-[#C6CAD0] before:absolute before:left-[60%] before:top-[30%] before:-z-10 lg:before:w-full 2xl:before:w-[200px]  ">
             <div className=" size-[38.74px]  border-[4px] border-[#AFD661] border-opacity-20  rounded-full text-xs font-semibold flex items-center justify-center text-black ">
               95%
             </div>
@@ -67,7 +67,7 @@ const Main = () => {
         </div>
 
         <div className=" relative flex flex-col items-center">
-          <button className=" p-[3.63px] bg-[#F0F7E2] size-[46px] rounded-full before:content-[''] before:w-[200px] before:h-0.5 before:bg-[#C6CAD0] before:absolute before:left-[60%] before:top-[30%] before:-z-10  ">
+          <button className=" p-[3.63px] bg-[#F0F7E2] size-[46px] rounded-full before:content-['']  before:h-0.5 before:bg-[#C6CAD0] before:absolute before:left-[60%] before:top-[30%] before:-z-10  lg:before:w-full 2xl:before:w-[200px] ">
             <div className=" size-[38.74px]  border-[4px] border-[#AFD661] border-opacity-20  rounded-full text-xs font-semibold flex items-center justify-center text-black ">
               83%
             </div>
@@ -79,7 +79,7 @@ const Main = () => {
 
         <div className=" relative flex flex-col items-center">
           {" "}
-          <button className=" p-[3.63px] bg-[#F0F7E2] size-[46px] rounded-full before:content-[''] before:w-[200px] before:h-0.5 before:bg-[#C6CAD0] before:absolute before:left-[60%] before:top-[30%] before:-z-10  ">
+          <button className=" p-[3.63px] bg-[#F0F7E2] size-[46px] rounded-full before:content-[''] before:h-0.5 before:bg-[#C6CAD0] before:absolute before:left-[60%] before:top-[30%] before:-z-10  lg:before:w-full 2xl:before:w-[200px] ">
             <div className=" size-[38.74px]  border-[4px] border-[#AFD661] border-opacity-20  rounded-full text-xs font-semibold flex items-center justify-center text-black ">
               48%
             </div>
@@ -90,7 +90,7 @@ const Main = () => {
         </div>
         <div className=" relative flex flex-col items-center">
           {" "}
-          <button className=" p-[3.63px] bg-[#F0F7E2] size-[46px] rounded-full before:content-[''] before:w-[200px] before:h-0.5 before:bg-[#C6CAD0] before:absolute before:left-[60%] before:top-[30%] before:-z-10  ">
+          <button className=" p-[3.63px] bg-[#F0F7E2] size-[46px] rounded-full before:content-['']  before:h-0.5 before:bg-[#C6CAD0] before:absolute before:left-[60%] before:top-[30%] before:-z-10 lg:before:w-full 2xl:before:w-[200px]  ">
             <div className=" size-[38.74px]  border-[4px] border-[#AFD661] border-opacity-20  rounded-full text-xs font-semibold flex items-center justify-center text-black ">
               55%
             </div>
@@ -101,7 +101,7 @@ const Main = () => {
         </div>
         <div className=" relative flex flex-col items-center">
           {" "}
-          <button className="  p-[3.63px] bg-[#F0F7E2] size-[46px] rounded-full before:content-[''] before:w-[200px] before:h-0.5 before:bg-[#C6CAD0] before:absolute before:left-[60%] before:top-[30%] before:-z-10  ">
+          <button className="  p-[3.63px] bg-[#F0F7E2] size-[46px] rounded-full before:content-['']  before:h-0.5 before:bg-[#C6CAD0] before:absolute before:left-[60%] before:top-[30%] before:-z-10  lg:before:w-full 2xl:before:w-[200px] ">
             <div className=" size-[38.74px]  border-[4px] border-[#AFD661] border-opacity-20  rounded-full text-xs font-semibold flex items-center justify-center text-black ">
               30%
             </div>
@@ -112,7 +112,7 @@ const Main = () => {
         </div>
         <div className="relative flex flex-col items-center">
           {" "}
-          <button className=" p-[3.63px] bg-[#F0F7E2] size-[46px] rounded-full before:content-[''] before:w-[190px] before:h-0.5 before:bg-[#C6CAD0] before:absolute before:left-[60%] before:top-[30%] before:-z-10  ">
+          <button className=" p-[3.63px] bg-[#F0F7E2] size-[46px] rounded-full before:content-['']  before:h-0.5 before:bg-[#C6CAD0] before:absolute before:left-[60%] before:top-[30%] before:-z-10 lg:before:w-full 2xl:before:w-[180px] ">
             <div className=" size-[38.74px]  border-[4px] border-[#AFD661] border-opacity-20  rounded-full text-xs font-semibold flex items-center justify-center text-black ">
               15%
             </div>

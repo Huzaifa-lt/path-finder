@@ -18,11 +18,11 @@ const Certificates = () => {
         </h3>
 
         {/* <CertificatesGeneral /> */}
-        {/* <PilotCertificates /> */}
+        <PilotCertificates />
         {/* <InstructorCertificate /> */}
         {/* <FlightEngineer /> */}
         {/* <MedicalCertificate /> */}
-        <PilotQuestionnaire />
+        {/* <PilotQuestionnaire /> */}
 
         {/* <MiscellaneousCertificates /> */}
 

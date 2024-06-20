@@ -1,4 +1,13 @@
 import React from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import RefrencesPopup from "./RefrencesPopup";
 
 const GeneralRefrences = () => {
   return (
@@ -49,7 +58,36 @@ const GeneralRefrences = () => {
             You don’t have any reference yet, add your first reference below
           </h6>
 
-          <button className=" py-2 px-3 bg-[#F0F7E2] border border-[#8FC521] rounded-md text-sm font-medium text-black flex items-center gap-1">
+          <Dialog>
+            <DialogTrigger>
+              {" "}
+              <button className=" py-2 px-3 bg-[#F0F7E2] border border-[#8FC521] rounded-md text-sm font-medium text-black flex items-center gap-1">
+                <span>
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.50016 3.83398V13.1673M3.8335 8.50065H13.1668"
+                      stroke="#8FC521"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>{" "}
+                Add reference
+              </button>
+            </DialogTrigger>
+            <DialogContent>
+              <RefrencesPopup />
+            </DialogContent>
+          </Dialog>
+
+          {/* <button className=" py-2 px-3 bg-[#F0F7E2] border border-[#8FC521] rounded-md text-sm font-medium text-black flex items-center gap-1">
             <span>
               <svg
                 width="17"
@@ -68,7 +106,7 @@ const GeneralRefrences = () => {
               </svg>
             </span>{" "}
             Add reference
-          </button>
+          </button> */}
         </div>
       </div>
 

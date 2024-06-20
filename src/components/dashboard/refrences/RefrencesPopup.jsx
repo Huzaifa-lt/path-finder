@@ -6,7 +6,7 @@ import React from "react";
 
 const RefrencesPopup = () => {
   return (
-    <div className=" p-6 bg-white">
+    <div>
       <h4 className=" pb-6 text-xl font-medium text-black border-b border-[#E4E7EC]">
         Add a new reference
       </h4>

@@ -13,10 +13,10 @@ const Flying = () => {
 
       <div className="mt-5 mx-6 ">
         {/* <FlyingSummary /> */}
-        {/* <FlyingTimeConditions /> */}
+        <FlyingTimeConditions />
         {/* <FlyingExperience /> */}
         {/* <FlyingInstrument /> */}
-        <FlyingTotal />
+        {/* <FlyingTotal /> */}
       </div>
     </div>
   );
