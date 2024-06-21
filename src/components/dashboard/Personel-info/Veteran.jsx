@@ -1,6 +1,6 @@
 import React from "react";
-import RadioBox from "../../../ui/RadioBox";
-import Input from "../../../ui/Input";
+import RadioBox from "@/components/ui/RadioBox";
+import Input from "@/components/ui/Input";
 
 const Veteran = () => {
   return (

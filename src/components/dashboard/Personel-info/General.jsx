@@ -1,7 +1,8 @@
 import React from "react";
-import Input from "../../../ui/Input";
-import SelectBox from "../../../ui/SelectBox";
-import RadioBox from "../../../ui/RadioBox";
+import Input from "@/components/ui/Input";
+import RadioBox from "@/components/ui/RadioBox";
+import SelectBox from "@/components/ui/SelectBox";
+import { DatePicker } from "@/components/ui/DatePicker";
 
 const General = () => {
   return (
@@ -12,16 +13,13 @@ const General = () => {
       <Input type="text" label="Suffix" />
       <Input type="text" label="Maiden Name" />
       <Input type="number" label="Passport No.*" />
-      <Input type="date" label="Passport Issue Date *" />
-      <Input type="date" label="Passport Expiration Date*" />
+      <DatePicker label="Passport Issue Date *" />
+      <DatePicker label="Passport Expiration Date*" />
       <Input type="text" label="Country of Issuance*" />
       <Input type="text" label="Country of Legal Residence*" />
       <SelectBox label="Birth Country*" />
       <RadioBox label="Are You 21 or Older?*" />
-      <Input type="date" label="Employment Availability* " />
-      {/* <Input type="select" label="Last Name*" />
-
-      <Input type="text" label="Last Name*" /> */}
+      <DatePicker label="Employment Availability*" />
     </div>
   );
 };

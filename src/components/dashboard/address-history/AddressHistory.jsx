@@ -1,10 +1,11 @@
 import React from "react";
 import AddressHistoryTable from "./AddressHistoryTable";
 import Address from "./Address";
+import EditAddressModal from "./EditAddressModal";
 
 const AddressHistory = () => {
   return (
-    <>
+    <div className="mt-5 mx-6 mb-11">
       <div className=" border border-[#E4E7EC] rounded-lg">
         <div className=" py-5 ml-6 flex items-center gap-2">
           <h2 className=" text-xl font-medium text-black">Address History</h2>
@@ -20,7 +21,7 @@ const AddressHistory = () => {
         <Address addressName="Address 2" />
         <Address addressName="Address 3" />
 
-        <div className=" mt-5  bg-[#E4E7EC] h-[1px] w-full flex justify-center items-center">
+        <div className="   bg-[#E4E7EC] h-[1px] w-full flex justify-center items-center">
           <button className=" py-2 bg-white text-sm font-medium text-[#8FC521] rounded-lg flex items-center gap-1">
             <span>
               <svg
@@ -43,7 +44,7 @@ const AddressHistory = () => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,7 +1,7 @@
 import React from "react";
-import Input from "../../../ui/Input";
-import SelectBox from "../../../ui/SelectBox";
-import PhoneSelectField from "../../../ui/PhoneSelectField";
+import Input from "@/components/ui/Input";
+import PhoneSelectField from "@/components/ui/PhoneSelectField";
+import SelectBox from "@/components/ui/SelectBox";
 
 const Emergency = () => {
   return (

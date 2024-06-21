@@ -1,5 +1,5 @@
 import React from "react";
-import RadioBox from "../../../ui/RadioBox";
+import RadioBox from "@/components/ui/RadioBox";
 
 const Disability = () => {
   return (

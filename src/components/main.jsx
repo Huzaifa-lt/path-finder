@@ -10,6 +10,7 @@ import Certificates from "./dashboard/certificates/Certificates";
 import Flying from "./dashboard/flying/Flying";
 import Refrences from "./dashboard/refrences/Refrences";
 import FileUploads from "./dashboard/file-uploads/FileUploads";
+import AddressHistory from "./dashboard/address-history/AddressHistory";
 
 const handleComplete = () => {
   console.log("Form completed!");
@@ -136,12 +137,13 @@ const Main = () => {
 
       <div>
         {/* <Stepper /> */}
+        <AddressHistory />
         {/* <Education /> */}
         {/* <Employment /> */}
         {/* <Certificates /> */}
         {/* <Flying /> */}
         {/* <Refrences /> */}
-        <FileUploads />
+        {/* <FileUploads /> */}
       </div>
 
       <StepsAction />

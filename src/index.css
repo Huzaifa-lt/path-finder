@@ -75,6 +75,7 @@
     }
     .main{
       width: calc(100% - 280px );
+      /* height: calc(100% + 63px); */
       margin-left: 280px;
     }
     table tr:not(:last-child){

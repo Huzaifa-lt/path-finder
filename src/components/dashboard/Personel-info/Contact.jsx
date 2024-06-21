@@ -1,7 +1,7 @@
 import React from "react";
-import Input from "../../../ui/Input";
-import EmailInputBox from "../../../ui/EmailInputBox";
-import PhoneSelectField from "../../../ui/PhoneSelectField";
+import Input from "@/components/ui/Input";
+import PhoneSelectField from "@/components/ui/PhoneSelectField";
+import EmailInputBox from "@/components/ui/EmailInputBox";
 
 const Contact = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import RadioBox from "../../../ui/RadioBox";
-import Input from "../../../ui/Input";
-import SelectBox from "../../../ui/SelectBox";
+import RadioBox from "@/components/ui/RadioBox";
+import Input from "@/components/ui/Input";
+import SelectBox from "@/components/ui/SelectBox";
 
 const Demographics = () => {
   return (

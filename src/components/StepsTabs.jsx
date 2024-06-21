@@ -1,9 +1,12 @@
 import React from "react";
 
-const StepsTabs = () => {
+const StepsTabs = ({ onClick }) => {
   return (
     <div className=" pl-6 py-3 bg-white flex items-center gap-2 sticky top-0 border-b border-[#E7E9EB]">
-      <button className=" py-2 px-3 bg-[#F0F7E2] border border-[#8FC521] rounded-md text-xs font-normal text-black">
+      <button
+        className=" py-2 px-3 bg-[#F0F7E2] border border-[#8FC521] rounded-md text-xs font-normal text-black"
+        onClick={onClick(0)}
+      >
         General
       </button>
       <span>
@@ -24,7 +27,10 @@ const StepsTabs = () => {
           />
         </svg>
       </span>
-      <button className="py-2 px-3 bg-[#F8F8F9] rounded-md text-xs font-normal text-black">
+      <button
+        className="py-2 px-3 bg-[#F8F8F9] rounded-md text-xs font-normal text-black"
+        onClick={onClick(1)}
+      >
         Contact
       </button>
       <span>
@@ -45,7 +51,10 @@ const StepsTabs = () => {
           />
         </svg>
       </span>
-      <button className="py-2 px-3 bg-[#F8F8F9] rounded-md text-xs font-normal text-black">
+      <button
+        className="py-2 px-3 bg-[#F8F8F9] rounded-md text-xs font-normal text-black"
+        onClick={onClick(2)}
+      >
         Emergency
       </button>
       <span>
@@ -66,7 +75,10 @@ const StepsTabs = () => {
           />
         </svg>
       </span>
-      <button className="py-2 px-3 bg-[#F8F8F9] rounded-md text-xs font-normal text-black">
+      <button
+        className="py-2 px-3 bg-[#F8F8F9] rounded-md text-xs font-normal text-black"
+        onClick={onClick(3)}
+      >
         Demographics
       </button>
       <span>
@@ -87,7 +99,10 @@ const StepsTabs = () => {
           />
         </svg>
       </span>
-      <button className="py-2 px-3 bg-[#F8F8F9] rounded-md text-xs font-normal text-black">
+      <button
+        className="py-2 px-3 bg-[#F8F8F9] rounded-md text-xs font-normal text-black"
+        onClick={onClick(4)}
+      >
         TSR
       </button>
       <span>
@@ -108,7 +123,10 @@ const StepsTabs = () => {
           />
         </svg>
       </span>
-      <button className="py-2 px-3 bg-[#F8F8F9] rounded-md text-xs font-normal text-black">
+      <button
+        className="py-2 px-3 bg-[#F8F8F9] rounded-md text-xs font-normal text-black"
+        onClick={onClick(5)}
+      >
         Non-TSR Criminal
       </button>
       <span>
@@ -129,7 +147,10 @@ const StepsTabs = () => {
           />
         </svg>
       </span>
-      <button className="py-2 px-3 bg-[#F8F8F9] rounded-md text-xs font-normal text-black">
+      <button
+        className="py-2 px-3 bg-[#F8F8F9] rounded-md text-xs font-normal text-black"
+        onClick={onClick(6)}
+      >
         Veteran Status
       </button>
     </div>

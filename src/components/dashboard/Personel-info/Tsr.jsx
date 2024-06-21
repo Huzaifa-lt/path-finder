@@ -1,7 +1,7 @@
 import React from "react";
-import RadioBox from "../../../ui/RadioBox";
-import Input from "../../../ui/Input";
-import TextArea from "../../../ui/TextArea";
+import RadioBox from "@/components/ui/RadioBox";
+import Input from "@/components/ui/Input";
+import TextArea from "@/components/ui/TextArea";
 
 const Tsr = () => {
   return (

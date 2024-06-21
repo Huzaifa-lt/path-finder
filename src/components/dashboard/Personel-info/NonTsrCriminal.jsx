@@ -1,5 +1,5 @@
+import RadioBox from "@/components/ui/RadioBox";
 import React from "react";
-import RadioBox from "../../../ui/RadioBox";
 
 const NonTsrCriminal = () => {
   return (
