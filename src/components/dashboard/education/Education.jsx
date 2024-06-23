@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import EducationTabs from "./EducationTabs";
 import SummaryTable from "./SummaryTable";
 import EducationSummary from "./EducationSummary";
@@ -7,15 +7,33 @@ import EducationDetail from "./EducationDetail";
 import Achievements from "./Achievements";
 
 const Education = () => {
+  const [currentTab, setCurrentTab] = useState("EducationSummary");
+
+  const renderContent = () => {
+    switch (currentTab) {
+      case "EducationSummary":
+        return <EducationSummary />;
+      case "GeneralInfo":
+        return <GeneralInfo />;
+      case "EducationDetail":
+        return <EducationDetail />;
+      case "Achievements":
+        return <Achievements />;
+      default:
+        return <EducationSummary />;
+    }
+  };
+
   return (
     <>
-      <EducationTabs />
+      <EducationTabs currentTab={currentTab} onTabClick={setCurrentTab} />
 
       <div className=" mt-5   mx-6  ">
+        {renderContent()}
         {/* <EducationSummary /> */}
         {/* <GeneralInfo /> */}
         {/* <EducationDetail /> */}
-        <Achievements />
+        {/* <Achievements /> */}
 
         {/* <div className="  mx-6  flex justify-end">
           <button className=" mt-4 py-2 px-3 rounded-lg  flex items-center justify-end gap-1 bg-[#F0F7E2] border border-[#8FC521] ">

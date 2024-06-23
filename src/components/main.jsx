@@ -137,8 +137,8 @@ const Main = () => {
 
       <div>
         {/* <Stepper /> */}
-        <AddressHistory />
-        {/* <Education /> */}
+        {/* <AddressHistory /> */}
+        <Education />
         {/* <Employment /> */}
         {/* <Certificates /> */}
         {/* <Flying /> */}

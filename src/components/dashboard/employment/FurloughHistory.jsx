@@ -63,7 +63,7 @@ const FurloughHistory = () => {
           </span>
         </button>
       </div>
-      <div className=" py-5 flex items-center gap-5">
+      <div className=" py-5  flex items-center gap-5">
         <DatePicker label="Start Date*" />
         <DatePicker label="End Date*" />
       </div>
