@@ -63,9 +63,13 @@ const FurloughHistory = () => {
           </span>
         </button>
       </div>
-      <div className=" py-5  flex items-center gap-5">
-        <DatePicker label="Start Date*" />
-        <DatePicker label="End Date*" />
+      <div className=" py-5 w-2/4  flex items-center gap-5">
+        <div className=" flex-grow">
+          <DatePicker label="Start Date*" />
+        </div>
+        <div className=" flex-grow">
+          <DatePicker label="End Date*" />
+        </div>
       </div>
       <div className=" pb-5">
         <TextArea
