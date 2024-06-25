@@ -1,5 +1,5 @@
 import { DatePicker } from "@/components/ui/DatePicker";
-import Input from "@/components/ui/Input";
+import Input from "@/components/ui/InputField";
 import RadioBox from "@/components/ui/RadioBox";
 import SelectBox from "@/components/ui/SelectBox";
 import React from "react";

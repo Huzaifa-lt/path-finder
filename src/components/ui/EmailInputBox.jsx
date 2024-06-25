@@ -25,7 +25,7 @@ const EmailInputBox = ({ label, ...rest }) => {
           />
         </svg>
         <input
-          className="py-1.5 px-3.5 pl-9 w-full  rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] focus:outline-none"
+          className="py-1.5 px-3.5 pl-9 h-9 w-full  rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] focus:outline-none"
           type="email"
           {...rest}
           placeholder="---"

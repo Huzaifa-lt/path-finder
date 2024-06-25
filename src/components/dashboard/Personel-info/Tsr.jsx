@@ -1,9 +1,13 @@
 import React from "react";
 import RadioBox from "@/components/ui/RadioBox";
-import Input from "@/components/ui/Input";
+import Input from "@/components/ui/InputField";
 import TextArea from "@/components/ui/TextArea";
 
 const Tsr = () => {
+  const radioOptions = [
+    { label: "Yes", value: "yes" },
+    { label: "No", value: "no" },
+  ];
   return (
     <div className="  mt-5 pb-6 border-b border-[#E4E7EC] ">
       <p className=" text-[#505D6F] text-base font-normal">
@@ -84,17 +88,23 @@ const Tsr = () => {
           Conspiracy or attempt to commit any of the criminal acts listed above.
         </li>
       </div>
-      <div>
+      {/* <div>
         <div className=" mt-5 py-4 pl-4  border border-[#E7E9EB] rounded-xl">
           <label className=" text-base  font-normal text-black" htmlFor="">
             In the past ten (10) years, have you ever been convicted or found
             not guilty by reason of insanity of any of the above listed crimes?
           </label>
           <div className=" mt-4">
-            <RadioBox label="Yes" />
             <RadioBox label="No" />
           </div>
         </div>
+      </div> */}
+      <div className=" mt-5">
+        <RadioBox
+          options={radioOptions}
+          label="  In the past ten (10) years, have you ever been convicted or found
+            not guilty by reason of insanity of any of the above listed crimes?"
+        />
       </div>
 
       <div className=" mt-4">

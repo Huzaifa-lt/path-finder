@@ -2,6 +2,16 @@ import React from "react";
 import RadioBox from "@/components/ui/RadioBox";
 
 const Disability = () => {
+
+  const RadioOptions = [
+    {
+      label: "Yes, I have a disability (or had a disability)",
+      value: "yes",
+    },
+    { label: "No, I do not have a disability", value: "no" },
+    { label: "I do not wish to answer", value: "no-answer" },
+  ];
+
   return (
     <div className="pb-5 border-b border-[#E4E7EC]">
       <p className=" py-5 text-[#505D6F] text-base font-normal border-b border-[#E4E7EC]">
@@ -44,19 +54,20 @@ const Disability = () => {
         </div>
       </div>
 
-      <div className=" py-4 pl-4  border border-[#E7E9EB] rounded-xl">
-        <label
+      {/* <label
           //   className=" py-[7px] px-3.5   rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D]"
           htmlFor=""
         >
           Select one from the list below:
-        </label>
-        <div>
-          <RadioBox label="Yes, I have a disability (or had a disability)" />
-          <RadioBox label="No, I do not have a disability" />
-          <RadioBox label="I do not wish to answer" />
-        </div>
-      </div>
+        </label> */}
+
+      <RadioBox
+        label="Select one from the list below:"
+        options={RadioOptions}
+        questionClass=" text-black text-base"
+      />
+      {/* <RadioBox label="No, I do not have a disability" />
+          <RadioBox label="I do not wish to answer" /> */}
     </div>
   );
 };

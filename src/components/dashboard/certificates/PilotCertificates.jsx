@@ -1,68 +1,52 @@
 import CheckBox from "@/components/ui/CheckBox";
 import { DatePicker } from "@/components/ui/DatePicker";
-import Input from "@/components/ui/Input";
-import RadioBox from "@/components/ui/RadioBox";
+import Input from "@/components/ui/InputField";
+import RadioBox, { radioOptions } from "@/components/ui/RadioBox";
 import TextArea from "@/components/ui/TextArea";
 import React from "react";
 
 const PilotCertificates = () => {
   return (
     <div>
-      <div className=" w-fit">
-        <label htmlFor="" className=" text-sm font-normal text-[#475467]">
-          Any pilot certificates?
-        </label>
-        <div className=" mt-1.5 pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-          <RadioBox label="Yes" />
-          <RadioBox label="No" />
-        </div>
-      </div>
+      <RadioBox
+        isOutline
+        options={radioOptions}
+        className="flex gap-4"
+        label=" Any pilot certificates?"
+      />
       <div className="py-5 border-b border-[#E4E7EC]  grid grid-cols-4 gap-x-3 gap-y-5 ">
-        <div>
-          <label htmlFor="" className=" text-sm font-normal text-[#475467]">
-            Commercial with Instrument (AMEL)?*
-          </label>
-          <div className=" mt-1.5 pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-            <RadioBox label="Yes" />
-            <RadioBox label="No" />
-          </div>
-        </div>
-        <div>
-          <label htmlFor="" className=" text-sm font-normal text-[#475467]">
-            Unrestricted ATP Certificate (AMEL)? *
-          </label>
-          <div className=" mt-1.5 pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-            <RadioBox label="Yes" />
-            <RadioBox label="No" />
-          </div>
-        </div>
-        <div>
-          <label htmlFor="" className=" text-sm font-normal text-[#475467]">
-            Restricted ATP Certificate (AMEL)? *
-          </label>
-          <div className=" mt-1.5 pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-            <RadioBox label="Yes" />
-            <RadioBox label="No" />
-          </div>
-        </div>
-        <div>
-          <label htmlFor="" className=" text-sm font-normal text-[#475467]">
-            IFR Certified (Instrument Rating)? *
-          </label>
-          <div className=" mt-1.5 pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-            <RadioBox label="Yes" />
-            <RadioBox label="No" />
-          </div>
-        </div>
-        <div>
-          <label htmlFor="" className=" text-sm font-normal text-[#475467]">
-            Current ATP Written (AMEL)?*
-          </label>
-          <div className=" mt-1.5 pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-            <RadioBox label="Yes" />
-            <RadioBox label="No" />
-          </div>
-        </div>
+        <RadioBox
+          isOutline
+          options={radioOptions}
+          className="flex gap-4"
+          label="Commercial with Instrument (AMEL)?*"
+        />
+
+        <RadioBox
+          isOutline
+          options={radioOptions}
+          className="flex gap-4"
+          label="Unrestricted ATP Certificate (AMEL)? *"
+        />
+        <RadioBox
+          isOutline
+          options={radioOptions}
+          className="flex gap-4"
+          label="Restricted ATP Certificate (AMEL)? *"
+        />
+        <RadioBox
+          isOutline
+          options={radioOptions}
+          className="flex gap-4"
+          label="IFR Certified (Instrument Rating)? *"
+        />
+        <RadioBox
+          isOutline
+          options={radioOptions}
+          className="flex gap-4"
+          label="Current ATP Written (AMEL)?*"
+        />
+
         <Input type="number" label="ATP Certificate Number*" />
         <DatePicker label="ATP Date of Issue*" />
         <DatePicker label="ATP Written Date*" />

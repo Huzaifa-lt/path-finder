@@ -2,7 +2,7 @@ import React from "react";
 
 const PhoneSelectField = ({ label, placeholder }) => {
   return (
-    <div className=" w-full flex flex-col">
+    <div className="  w-full flex flex-col">
       <label htmlFor="" className=" mb-1.5 text-sm font-normal text-[#344054] ">
         {label}
       </label>

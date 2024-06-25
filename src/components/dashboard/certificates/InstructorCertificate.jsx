@@ -1,7 +1,7 @@
 import CheckBox from "@/components/ui/CheckBox";
 import { DatePicker } from "@/components/ui/DatePicker";
-import Input from "@/components/ui/Input";
-import RadioBox from "@/components/ui/RadioBox";
+import Input from "@/components/ui/InputField";
+import RadioBox, { radioOptions } from "@/components/ui/RadioBox";
 import SelectBox from "@/components/ui/SelectBox";
 import TextArea from "@/components/ui/TextArea";
 import React from "react";
@@ -9,54 +9,40 @@ import React from "react";
 const InstructorCertificate = () => {
   return (
     <div>
-      <div className=" w-fit">
-        <label htmlFor="" className=" text-sm font-normal text-[#475467]">
-          Any Instructor certificates?
-        </label>
-        <div className=" mt-1.5 pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-          <RadioBox label="Yes" />
-          <RadioBox label="No" />
-        </div>
-      </div>
+      <RadioBox
+        isOutline
+        options={radioOptions}
+        className="flex gap-4"
+        label="Any Instructor certificates?"
+      />
       <div className="py-5 border-b border-[#E4E7EC]  grid grid-cols-4 gap-x-3 gap-y-5 ">
         <SelectBox label="ATP Certificate Number*" />
         <DatePicker label="Date of Issue*" />
-        <div>
-          <label htmlFor="" className=" text-sm font-normal text-[#475467]">
-            CFI Instructor? *
-          </label>
-          <div className=" mt-1.5 pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-            <RadioBox label="Yes" />
-            <RadioBox label="No" />
-          </div>
-        </div>
-        <div>
-          <label htmlFor="" className=" text-sm font-normal text-[#475467]">
-            CFII?? *
-          </label>
-          <div className=" mt-1.5 pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-            <RadioBox label="Yes" />
-            <RadioBox label="No" />
-          </div>
-        </div>
-        <div>
-          <label htmlFor="" className=" text-sm font-normal text-[#475467]">
-            Military Instructor? *
-          </label>
-          <div className=" mt-1.5 pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-            <RadioBox label="Yes" />
-            <RadioBox label="No" />
-          </div>
-        </div>
-        <div>
-          <label htmlFor="" className=" text-sm font-normal text-[#475467]">
-            Full-Time Instructor? *
-          </label>
-          <div className=" mt-1.5 pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-            <RadioBox label="Yes" />
-            <RadioBox label="No" />
-          </div>
-        </div>
+
+        <RadioBox
+          isOutline
+          options={radioOptions}
+          className="flex gap-4"
+          label="CFI Instructor? *"
+        />
+        <RadioBox
+          isOutline
+          options={radioOptions}
+          className="flex gap-4"
+          label="CFII?? *"
+        />
+        <RadioBox
+          isOutline
+          options={radioOptions}
+          className="flex gap-4"
+          label="Military Instructor? *"
+        />
+        <RadioBox
+          isOutline
+          options={radioOptions}
+          className="flex gap-4"
+          label="Full-Time Instructor? *"
+        />
       </div>
 
       <div className="py-5 border-b border-[#E4E7EC] ">

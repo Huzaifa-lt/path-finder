@@ -1,5 +1,5 @@
 import { DatePicker } from "@/components/ui/DatePicker";
-import Input from "@/components/ui/Input";
+import Input from "@/components/ui/InputField";
 import React from "react";
 
 const MiscellaneousCertificates = () => {

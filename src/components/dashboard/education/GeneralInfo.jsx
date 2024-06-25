@@ -4,24 +4,22 @@ import PhoneSelectField from "../../ui/PhoneSelectField";
 import SelectBox from "../../ui/SelectBox";
 
 const GeneralInfo = () => {
+  const radioOptions = [
+    { label: "Yes", value: "yes" },
+    { label: "No", value: "no" },
+  ];
   return (
     <>
       <div className=" pt-6 px-6 pb-2 border border-[#E4E7EC] rounded-lg">
         <h2 className=" text-xl font-medium text-black">General Information</h2>
 
         <div className=" mt-5 pb-6 border-b border-[#E4E7EC] grid grid-cols-4 gap-x-3 gap-y-[21px]">
-          <div>
-            <label
-              htmlFor=""
-              className=" mb-1.5 text-sm font-normal text-[#475467]"
-            >
-              Fluent in English?*
-            </label>
-            <div className=" pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-              <RadioBox label="Yes" />
-              <RadioBox label="No" />
-            </div>
-          </div>
+          <RadioBox
+            options={radioOptions}
+            className="flex gap-4"
+            isOutline
+            label=" Fluent in English?*"
+          />
           <PhoneSelectField
             label="Years of College  *"
             placeholder="+1 (555) 000-0000"
@@ -31,18 +29,13 @@ const GeneralInfo = () => {
             label="Languages you speak fluently *"
             placeholder="+1 (555) 000-0000"
           />
-          <div>
-            <label
-              htmlFor=""
-              className=" mb-1.5 text-sm font-normal text-[#475467]"
-            >
-              Diploma / G.E.D. Obtained? *
-            </label>
-            <div className=" pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-              <RadioBox label="Yes" />
-              <RadioBox label="No" />
-            </div>
-          </div>
+
+          <RadioBox
+            options={radioOptions}
+            isOutline
+            className="flex gap-4"
+            label="Diploma / G.E.D. Obtained? *"
+          />
           <PhoneSelectField
             label="Formal Flight Training *"
             placeholder="+1 (555) 000-0000"

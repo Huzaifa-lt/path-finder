@@ -16,11 +16,8 @@ export function DatePicker({ label }) {
   const [date, setDate] = React.useState();
 
   return (
-    <div>
-      <Label
-        htmlFor="email"
-        className=" mb-1.5 text-sm font-normal text-[#475467]"
-      >
+    <div className=" flex flex-col gap-1.5">
+      <Label htmlFor="" className="  text-sm font-normal text-[#475467]">
         {label}
       </Label>
 
@@ -29,7 +26,7 @@ export function DatePicker({ label }) {
           <Button
             variant={"outline"}
             className={cn(
-              " mt-1.5 w-full flex py-[9.5px] px-3.5 justify-between text-left font-normal",
+              "   h-9 w-full flex py-[9.5px] px-3.5 justify-between text-left font-normal",
               !date && "text-muted-foreground"
             )}
           >

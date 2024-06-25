@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "@/components/ui/Input";
+import Input from "@/components/ui/InputField";
 import PhoneSelectField from "@/components/ui/PhoneSelectField";
 import EmailInputBox from "@/components/ui/EmailInputBox";
 

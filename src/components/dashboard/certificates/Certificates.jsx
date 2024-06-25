@@ -36,7 +36,7 @@ const Certificates = () => {
     <>
       <CertificatesTabs currentTab={currentTab} onTabClick={setCurrentTab} />
       <div className="mt-5 p-6 mx-6 rounded-lg border border-[#E4E7EC]">
-        <h3 className="text-xl font-medium text-black">
+        <h3 className=" mb-5 text-xl font-medium text-black">
           {currentTab === "CertificatesGeneral" && "General Certificates"}
           {currentTab === "PilotCertificates" && "Pilot Certificates"}
           {currentTab === "InstructorCertificate" && "Instructor Certificates"}

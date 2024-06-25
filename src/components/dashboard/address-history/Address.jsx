@@ -1,6 +1,7 @@
 import React from "react";
-import Input from "../../ui/Input";
+import Input from "../../ui/InputField";
 import SelectBox from "../../ui/SelectBox";
+import { DatePicker } from "@/components/ui/DatePicker";
 
 const Address = ({ addressName }) => {
   return (
@@ -36,8 +37,8 @@ const Address = ({ addressName }) => {
           <SelectBox label="State*" />
           <Input type="text" label="Zip Code*" />
           <SelectBox label="Country*" />
-          <Input type="date" label="Start Date*" />
-          <Input type="date" label="End Date*" />
+          <DatePicker label="Start Date*" />
+          <DatePicker label="End Date*" />
         </div>
       </div>
     </div>

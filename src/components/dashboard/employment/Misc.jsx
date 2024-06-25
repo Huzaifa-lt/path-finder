@@ -3,6 +3,10 @@ import TextArea from "@/components/ui/TextArea";
 import React from "react";
 
 const Misc = () => {
+  const radioOptions = [
+    { label: "Yes", value: "yes" },
+    { label: "No", value: "no" },
+  ];
   return (
     <div className="pt-6 px-6 pb-8 border border-[#E4E7EC] rounded-lg">
       <div>
@@ -42,15 +46,11 @@ const Misc = () => {
       </div>
 
       <div className=" mt-5 space-y-5">
-        <div className=" p-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D]">
-          <label htmlFor="" className=" text-sm font-normal text-[#475467]">
-            Can you legally work in the U.S.?*
-          </label>
-          <div className=" mt-4  flex items-center gap-4  ">
-            <RadioBox label="Yes" />
-            <RadioBox label="No" />
-          </div>
-        </div>
+        <RadioBox
+          options={radioOptions}
+          className="flex gap-4"
+          label=" Do you have any IMMEDIATE FAMILY MEMBERS working in the airline career field?"
+        />
 
         <TextArea
           label="If yes, please provide information in this format: Name / Relationship / Company Status, etc*"

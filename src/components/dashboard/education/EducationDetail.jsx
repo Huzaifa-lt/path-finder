@@ -1,10 +1,14 @@
 import { DatePicker } from "@/components/ui/DatePicker";
-import Input from "@/components/ui/Input";
+import Input from "@/components/ui/InputField";
 import RadioBox from "@/components/ui/RadioBox";
 import SelectBox from "@/components/ui/SelectBox";
 import React from "react";
 
 const EducationDetail = () => {
+  const radioOptions = [
+    { label: "Yes", value: "yes" },
+    { label: "No", value: "no" },
+  ];
   return (
     <div className="">
       <div className=" flex justify-between items-center">
@@ -31,7 +35,7 @@ const EducationDetail = () => {
         </button>
       </div>
       <div className=" py-5 grid grid-cols-4 gap-x-3 gap-y-[21px]">
-        <div className=" col-span-full">
+        <div className="col-span-full w-2/6">
           <SelectBox label="Select Category" />
         </div>
         <Input type="text" label="School Name*" />
@@ -44,34 +48,24 @@ const EducationDetail = () => {
         <DatePicker label="End Date*" />
         <Input type="text" label="Program Type*" />
         <SelectBox label="GPA*" />
-        <div>
-          <label
-            htmlFor=""
-            className=" mb-1.5 text-sm font-normal text-[#475467]"
-          >
-            Did you Graduate from this school *
-          </label>
-          <div className=" pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-            <RadioBox label="Yes" />
-            <RadioBox label="No" />
-          </div>
-        </div>
+
+        <RadioBox
+          options={radioOptions}
+          isOutline
+          className="flex gap-4"
+          label="Did you Graduate from this school *"
+        />
         <DatePicker label="Educational Honors*" />
         <Input type="text" label="Your Last Name while at School*" />
         <SelectBox label="Education Level" />
         <Input type="text" label="Major Name*" />
-        <div>
-          <label
-            htmlFor=""
-            className=" mb-1.5 text-sm font-normal text-[#475467]"
-          >
-            Currently Attending *
-          </label>
-          <div className=" pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-            <RadioBox label="Yes" />
-            <RadioBox label="No" />
-          </div>
-        </div>
+
+        <RadioBox
+          options={radioOptions}
+          isOutline
+          className="flex gap-4"
+          label="Currently Attending *"
+        />
       </div>
 
       <div className=" mt-5  bg-[#E4E7EC] h-[1px] w-full flex justify-center items-center">

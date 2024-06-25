@@ -1,12 +1,16 @@
 import CheckBox from "@/components/ui/CheckBox";
 import { DatePicker } from "@/components/ui/DatePicker";
-import Input from "@/components/ui/Input";
+import Input from "@/components/ui/InputField";
 import RadioBox from "@/components/ui/RadioBox";
 import SelectBox from "@/components/ui/SelectBox";
 import TextArea from "@/components/ui/TextArea";
 import React from "react";
 
 const CurrentEmployment = () => {
+  const radioOptions = [
+    { label: "Yes", value: "yes" },
+    { label: "No", value: "no" },
+  ];
   return (
     <div className=" pt-6 px-6 pb-5 border border-[#E4E7EC] rounded-lg">
       <h2 className=" pb-6 text-xl font-medium text-black border-b border-[#E4E7EC]">
@@ -33,42 +37,26 @@ const CurrentEmployment = () => {
           <Input type="text" label="Positions Held *" />
           <Input type="number" label="Aircraft Flown *" />
           <Input type="number" label="Avg Flight Hours per Month*" />
-          <div>
-            <label
-              htmlFor=""
-              className=" mb-1.5 text-sm font-normal text-[#475467]"
-            >
-              Part 121 Carrier*
-            </label>
-            <div className=" pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-              <RadioBox label="Yes" />
-              <RadioBox label="No" />
-            </div>
-          </div>
-          <div>
-            <label
-              htmlFor=""
-              className=" mb-1.5 text-sm font-normal text-[#475467]"
-            >
-              Part 125 Carrier *
-            </label>
-            <div className=" pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-              <RadioBox label="Yes" />
-              <RadioBox label="No" />
-            </div>
-          </div>
-          <div>
-            <label
-              htmlFor=""
-              className=" mb-1.5 text-sm font-normal text-[#475467]"
-            >
-              Part 135 Carrier *
-            </label>
-            <div className=" pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-              <RadioBox label="Yes" />
-              <RadioBox label="No" />
-            </div>
-          </div>
+
+          <RadioBox
+            options={radioOptions}
+            isOutline
+            className="flex gap-4"
+            label="Part 121 Carrier*"
+          />
+          <RadioBox
+            options={radioOptions}
+            isOutline
+            className="flex gap-4"
+            label="Part 125 Carrier*"
+          />
+          <RadioBox
+            options={radioOptions}
+            isOutline
+            className="flex gap-4"
+            label="Part 135 Carrier*"
+          />
+
           <div className=" col-span-full">
             <TextArea
               label="Duties Description *"
@@ -86,18 +74,13 @@ const CurrentEmployment = () => {
           <DatePicker label="To Date*" />
 
           <SelectBox label="Reason for Leaving  *" />
-          <div>
-            <label
-              htmlFor=""
-              className=" mb-1.5 text-sm font-normal text-[#475467]"
-            >
-              DOT covered position?*
-            </label>
-            <div className=" pl-3.5 py-[9.5px] flex items-center gap-4 rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D] ">
-              <RadioBox label="Yes" />
-              <RadioBox label="No" />
-            </div>
-          </div>
+
+          <RadioBox
+            options={radioOptions}
+            isOutline
+            className="flex gap-4"
+            label="DOT covered position?*"
+          />
         </div>
         <CheckBox label="I am currently employee" />
       </div>

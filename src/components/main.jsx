@@ -139,8 +139,8 @@ const Main = () => {
         {/* <Stepper /> */}
         {/* <AddressHistory /> */}
         {/* <Education /> */}
-        <Employment />
-        {/* <Certificates /> */}
+        {/* <Employment /> */}
+        <Certificates />
         {/* <Flying /> */}
         {/* <Refrences /> */}
         {/* <FileUploads /> */}

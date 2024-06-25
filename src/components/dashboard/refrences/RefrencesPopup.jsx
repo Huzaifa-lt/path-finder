@@ -1,6 +1,6 @@
 import CheckBox from "@/components/ui/CheckBox";
 import { DatePicker } from "@/components/ui/DatePicker";
-import Input from "@/components/ui/Input";
+import Input from "@/components/ui/InputField";
 import SelectBox from "@/components/ui/SelectBox";
 import React from "react";
 
