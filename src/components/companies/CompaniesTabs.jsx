@@ -1,8 +1,8 @@
 import React from "react";
 
-const CompaniesTabs = (currentTab, onTabClick) => {
+const CompaniesTabs = ({ currentTab, onTabClick }) => {
   const tabs = [
-    { name: "Airline Application Links", id: "ApplicationLinks" },
+    { name: "Airline Application Links", id: "Application-links" },
     { name: "Domicile Map", id: "DomicileMap" },
     { name: "Interactive Fleet/Route Map", id: "RouteMap" },
     { name: "Hiring Requirements", id: "HiringRequirments" },

@@ -18,18 +18,22 @@ const ApplicationLinks = () => {
             <ApplicationLinkCard
               planeName="Aegean Airlines"
               imgSrc="./aegean.png"
+              isFavourite
             />
             <ApplicationLinkCard
               planeName="Aegean Airlines"
               imgSrc="./aer-lingus.png"
+              isFavourite
             />
             <ApplicationLinkCard
               planeName="Aegean Airlines"
               imgSrc="./aeroflot.png"
+              isFavourite
             />
             <ApplicationLinkCard
               planeName="Aegean Airlines"
               imgSrc="./aerolineas.png"
+              isFavourite
             />
           </div>
         </div>
@@ -42,35 +46,35 @@ const ApplicationLinks = () => {
           <div className=" grid grid-cols-4 gap-x-4 gap-y-5">
             <ApplicationLinkCard
               planeName="Aegean Airlines"
-              imgSrc="./aegean.png"
+              imgSrc="./aeromexico.png"
             />
             <ApplicationLinkCard
               planeName="Aegean Airlines"
-              imgSrc="./aer-lingus.png"
+              imgSrc="./empty.png"
             />
             <ApplicationLinkCard
               planeName="Aegean Airlines"
-              imgSrc="./aeroflot.png"
+              imgSrc="./aeronaves.png"
             />
             <ApplicationLinkCard
               planeName="Aegean Airlines"
-              imgSrc="./aerolineas.png"
+              imgSrc="./empty.png"
             />
             <ApplicationLinkCard
               planeName="Aegean Airlines"
-              imgSrc="./aegean.png"
+              imgSrc="./empty.png"
             />
             <ApplicationLinkCard
               planeName="Aegean Airlines"
-              imgSrc="./aer-lingus.png"
+              imgSrc="./aeromexico-connect.png"
             />
             <ApplicationLinkCard
               planeName="Aegean Airlines"
-              imgSrc="./aeroflot.png"
+              imgSrc="./empty.png"
             />
             <ApplicationLinkCard
               planeName="Aegean Airlines"
-              imgSrc="./aerolineas.png"
+              imgSrc="./algeria.png"
             />
           </div>
         </div>

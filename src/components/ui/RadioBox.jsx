@@ -16,6 +16,7 @@ export const radioOptions = [
  const RadioBox = ({
    label,
    isOutline,
+   borderNone,
    className,
    questionClass,
    options,
@@ -27,14 +28,15 @@ export const radioOptions = [
    showDetail = false,
    detailText = "",
  }) => {
-   return (
-     <div
-       className={`flex flex-col ${
+   const containerClassNames = borderNone
+     ? "flex flex-col gap-4 "
+     : `flex flex-col ${
          isOutline
            ? "gap-1.5"
            : "p-4 border border-[#E7E9EB] rounded-xl justify-center gap-4"
-       }`}
-     >
+       }`;
+   return (
+     <div className={`${containerClassNames} ${borderNone && "border-none"}`}>
        <div className={`flex items-center ${questionClass}`}>
          <label
            htmlFor=""

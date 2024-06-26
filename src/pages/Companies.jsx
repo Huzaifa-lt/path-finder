@@ -1,18 +1,20 @@
 import ApplicationLinks from "@/components/companies/ApplicationLinks";
 import CompaniesTabs from "@/components/companies/CompaniesTabs";
+import DomicileMap from "@/components/companies/DomicileMap";
+import InteractiveFleet from "@/components/companies/InteractiveFleet";
 import React, { useState } from "react";
 
 const Companies = () => {
-  const [currentTab, setCurrentTab] = useState("ApplicationLinks");
+  const [currentTab, setCurrentTab] = useState("Application-links");
 
   const renderContent = () => {
     switch (currentTab) {
-      case "ApplicationLinks":
+      case "Application-links":
         return <ApplicationLinks />;
       case "DomicileMap":
-        return <EmploymentGeneral />;
+        return <DomicileMap />;
       case "RouteMap":
-        return <CurrentEmployment />;
+        return <InteractiveFleet />;
       case "HiringRequirments":
         return <FurloughHistory />;
 

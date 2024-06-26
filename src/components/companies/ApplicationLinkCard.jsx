@@ -1,6 +1,6 @@
 import React from "react";
 
-const ApplicationLinkCard = ({ planeName, imgSrc }) => {
+const ApplicationLinkCard = ({ planeName, imgSrc, isFavourite }) => {
   return (
     <div className=" min-h-[200px]  bg-white border border-[#E7E9EB] rounded-xl ">
       <div className=" min-h-[122px] ">
@@ -39,7 +39,7 @@ const ApplicationLinkCard = ({ planeName, imgSrc }) => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_882_7045)">
+                <g clipPath="url(#clip0_882_7045)">
                   <path
                     d="M8 5V6"
                     stroke="#7C8693"
@@ -83,22 +83,40 @@ const ApplicationLinkCard = ({ planeName, imgSrc }) => {
             </span>
           </div>
           <button>
-            <svg
-              width="18"
-              height="19"
-              viewBox="0 0 18 19"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9 2L11.3175 6.695L16.5 7.4525L12.75 11.105L13.635 16.265L9 13.8275L4.365 16.265L5.25 11.105L1.5 7.4525L6.6825 6.695L9 2Z"
-                fill="#8FC521"
-                stroke="#8FC521"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            {isFavourite ? (
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 2L11.3175 6.695L16.5 7.4525L12.75 11.105L13.635 16.265L9 13.8275L4.365 16.265L5.25 11.105L1.5 7.4525L6.6825 6.695L9 2Z"
+                  fill="#8FC521"
+                  stroke="#8FC521"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            ) : (
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 2L11.3175 6.695L16.5 7.4525L12.75 11.105L13.635 16.265L9 13.8275L4.365 16.265L5.25 11.105L1.5 7.4525L6.6825 6.695L9 2Z"
+                  stroke="#8FC521"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            )}
           </button>
         </div>
         <p className=" mt-2 text-sm font-normal text-[#9198A4]">
