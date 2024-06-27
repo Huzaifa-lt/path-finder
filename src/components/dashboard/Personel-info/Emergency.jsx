@@ -5,7 +5,7 @@ import SelectBox from "@/components/ui/SelectBox";
 
 const Emergency = () => {
   return (
-    <div className=" mt-5 pb-6 border-b border-[#E4E7EC] grid grid-cols-4 gap-x-3 gap-y-[21px]">
+    <div className=" my-5 pb-6 border-b border-[#E4E7EC] grid grid-cols-4 gap-x-3 gap-y-[21px]">
       <Input type="text" label="First Name *" />
       <Input type="text" label="Middle Name *" />
       <Input type="text" label="Last Name  *" />

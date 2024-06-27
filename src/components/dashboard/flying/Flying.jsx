@@ -5,6 +5,7 @@ import FlyingTimeConditions from "./FlyingTimeConditions";
 import FlyingExperience from "./FlyingExperience";
 import FlyingInstrument from "./FlyingInstrument";
 import FlyingTotal from "./FlyingTotal";
+import NavigationButtons from "@/components/NavigationBtns";
 
 const Flying = () => {
   const [currentTab, setCurrentTab] = useState("FlyingSummary");
@@ -30,6 +31,7 @@ const Flying = () => {
     <div>
       <FlyingTabs currentTab={currentTab} onTabClick={setCurrentTab} />
       <div className="mt-5 mx-6">{renderContent()}</div>
+      <NavigationButtons />
     </div>
   );
 };

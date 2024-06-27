@@ -45,25 +45,25 @@ const Sidebar = () => {
         </div>
 
         <div className=" mt-6 px-4">
-          <div className="  w-full py-2 pl-3  flex items-center  gap-2 relative group ">
+          <div className="  w-full py-2 pl-3 bg-[#F0F7E2]  rounded-md flex items-center  gap-2 relative group ">
             <div className=" ">
               <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
+                width="20"
+                height="22"
+                viewBox="0 0 20 22"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M9 22V12H15V22M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
-                  stroke="#687382"
+                  d="M7 21V11H13V21M1 8L10 1L19 8V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8Z"
+                  stroke="black"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
               </svg>
             </div>
-            <a href="" className="text-[#687382] text-sm font-normal">
+            <a href="" className="text-black text-sm font-medium">
               Control Panel
             </a>
             <span className=" w-1 h-10 bg-white absolute left-0  block "></span>

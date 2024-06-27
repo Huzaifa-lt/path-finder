@@ -15,7 +15,7 @@ const General = () => {
   ];
 
   return (
-    <div className=" mt-5 pb-6 border-b border-[#E4E7EC] grid grid-cols-4 gap-x-3 gap-y-[21px]">
+    <div className=" mt-5 mb-4 pb-6 border-b border-[#E4E7EC] grid grid-cols-4 gap-x-3 gap-y-[21px]">
       <InputField type="text" label="First Name*" />
       <InputField type="text" label="Middle Name*" />
       <InputField type="text" label="Last Name*" />

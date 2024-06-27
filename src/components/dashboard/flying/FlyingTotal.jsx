@@ -4,6 +4,13 @@ import RadioBox from "@/components/ui/RadioBox";
 import SelectBox from "@/components/ui/SelectBox";
 import React from "react";
 
+const radioOptions = [
+  { label: "Asia/Pacific", value: "asia" },
+  { label: "South America/Central America", value: "america" },
+  { label: "North Atlantic/Europe", value: "europe" },
+  { label: "Africa/Middle East", value: "africa" },
+];
+
 const FlyingTotal = () => {
   return (
     <div className="px-6 pt-6 pb-5  border border-[#E4E7EC] rounded-lg">
@@ -67,13 +74,37 @@ const FlyingTotal = () => {
             <Input type="text" label="E-3G*" />
             <Input type="text" label="T-1A*" />
             <Input type="text" label="T-6A*" />
-            <DatePicker label="Date reached*" />
-            <DatePicker label="Date reached*" />
-            <Input type="text" label="Total hours in an aircraft*" />
+            <DatePicker
+              showInfoButton
+              infoText="Date reached 1,000 hours Fixed-Wing Turbine"
+              label="Date reached*"
+            />
+            <DatePicker
+              showInfoButton
+              infoText="Date reached 1,000 PIC hours Fixed-Wing Turbine"
+              label="Date reached*"
+            />
+            <Input
+              type="text"
+              showInfoButton
+              infoText="Total hours in an aircraft that requires two or more pilots"
+              tooltipSide="right"
+              label="Total hours in an aircraft*"
+            />
             <Input type="text" label="Date last flight*" />
             <DatePicker label="Last Flight Aircraft*" />
-            <DatePicker label="Total fixed hours*" />
-            <Input type="text" label="Total fixed (PIC & SIC Time) " />
+            <DatePicker
+              showInfoButton
+              infoText="Total hours in an aircraft that requires two or more pilots"
+              label="Total fixed hours*"
+            />
+            <Input
+              type="text"
+              showInfoButton
+              infoText="Total fixed wing jet and/or fixed wing multi-engine turbine powered flight time in the last 24 months (PIC & SIC Time)"
+              tooltipSide="top"
+              label="Total fixed (PIC & SIC Time) "
+            />
             <Input type="text" label="Date last flight:*" />
           </div>
         </div>
@@ -92,23 +123,17 @@ const FlyingTotal = () => {
             FAR Part 91 Experience
           </h3>
 
-          <div className=" mt-4 grid grid-cols-4 gap-x-3 gap-y-[21px] ">
+          <div className=" mt-4 mb-6 grid grid-cols-4 gap-x-3 gap-y-[21px] ">
             <Input type="text" label="Total Flight Hours*" />
             <Input type="text" label="Total Years Active Flight Duty*" />
           </div>
 
-          <div className=" mt-6 p-4 space-y-4 border border-[#E7E9EB] rounded-xl">
-            <label htmlFor="" className=" text-sm font-normal text-[#475467]">
-              1. Are you available for employment with a two-week notice? If no,
-              what date are you available? *
-            </label>
-            <div className=" flex flex-col gap-3">
-              <RadioBox label="Asia/Pacific" />
-              <RadioBox label="South America/Central America" />
-              <RadioBox label="North Atlantic/Europe" />
-              <RadioBox label="Africa/Middle East" />
-            </div>
-          </div>
+          <RadioBox
+            options={radioOptions}
+            className=" gap-3"
+            label="1. Are you available for employment with a two-week notice? If no,
+              what date are you available? *"
+          />
         </div>
       </div>
 

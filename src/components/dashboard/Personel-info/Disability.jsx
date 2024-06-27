@@ -13,7 +13,7 @@ const Disability = () => {
   ];
 
   return (
-    <div className="pb-5 border-b border-[#E4E7EC]">
+    <div className=" mb-5 pb-5 border-b border-[#E4E7EC]">
       <p className=" py-5 text-[#505D6F] text-base font-normal border-b border-[#E4E7EC]">
         You are considered to have a disability if you have a physical or mental
         impairment or medical condition that substantially limits a major life

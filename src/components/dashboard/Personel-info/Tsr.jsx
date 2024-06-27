@@ -9,7 +9,7 @@ const Tsr = () => {
     { label: "No", value: "no" },
   ];
   return (
-    <div className="  mt-5 pb-6 border-b border-[#E4E7EC] ">
+    <div className="  my-5 pb-6 border-b border-[#E4E7EC] ">
       <p className=" text-[#505D6F] text-base font-normal">
         In accordance with Transportation Security Regulation (TSR) 49 CFR, ll
         employees that are granted unescorted access to a Security

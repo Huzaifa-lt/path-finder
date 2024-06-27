@@ -1,5 +1,5 @@
 import Input from "@/components/ui/InputField";
-import RadioBox from "@/components/ui/RadioBox";
+import RadioBox, { radioOptions } from "@/components/ui/RadioBox";
 import SelectBox from "@/components/ui/SelectBox";
 import React from "react";
 
@@ -10,13 +10,19 @@ const FlyingExperience = () => {
 
       <div className="mt-4 space-y-6">
         <div className="  pb-6 border-b border-[#E4E7EC]">
-          <label htmlFor="" className=" text-sm font-normal text-[#475467]">
+          {/* <label htmlFor="" className=" text-sm font-normal text-[#475467]">
             Military Experience?
           </label>
           <div className=" mt-3 flex  items-center gap-4">
             <RadioBox label="Yes" />
             <RadioBox label="No" />
-          </div>
+          </div> */}
+          <RadioBox
+            borderNone
+            options={radioOptions}
+            className="flex gap-4"
+            label="Military Experience?"
+          />
         </div>
 
         <div className="  pb-6 border-b border-[#E4E7EC]">

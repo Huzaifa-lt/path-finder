@@ -13,7 +13,7 @@ const RefrencesSummary = () => {
 
         <RefrencesTable />
       </div>
-      <div className=" mt-5  flex justify-end">
+      {/* <div className=" mt-5  flex justify-end">
         <button className=" py-2 px-3 rounded-lg  flex items-center justify-end gap-1 bg-[#F0F7E2] border border-[#8FC521] ">
           Next:
           <svg
@@ -33,7 +33,7 @@ const RefrencesSummary = () => {
           </svg>
           General References
         </button>
-      </div>
+      </div> */}
     </>
   );
 };

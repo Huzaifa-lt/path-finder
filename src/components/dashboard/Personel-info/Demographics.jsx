@@ -9,7 +9,7 @@ const Demographics = () => {
     { label: "No", value: "no" },
   ];
   return (
-    <div className="mt-5 pb-6 border-b border-[#E4E7EC] flex flex-col gap-5 ">
+    <div className="my-5 pb-6 border-b border-[#E4E7EC] flex flex-col gap-5 ">
       <p className=" pr-8 text-[#313131] text-base font-normal">
         The U.S. Equal Employment Opportunity Commission (EEOC) was established
         by Title VII of the Civil Rights Act of 1964 and began operating on July

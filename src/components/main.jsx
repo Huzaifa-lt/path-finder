@@ -136,11 +136,11 @@ const Main = () => {
       </div>
 
       <div>
-        {/* <Stepper /> */}
+        <Stepper />
         {/* <AddressHistory /> */}
         {/* <Education /> */}
         {/* <Employment /> */}
-        <Certificates />
+        {/* <Certificates /> */}
         {/* <Flying /> */}
         {/* <Refrences /> */}
         {/* <FileUploads /> */}

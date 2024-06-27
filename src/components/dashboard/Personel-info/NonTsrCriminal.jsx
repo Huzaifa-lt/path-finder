@@ -7,7 +7,7 @@ const NonTsrCriminal = () => {
     { label: "No", value: "no" },
   ];
   return (
-    <div className=" mt-5 pb-6 border-b border-[#E4E7EC] ">
+    <div className=" my-5 pb-6 border-b border-[#E4E7EC] ">
       {/* <div className=" mt-5 py-4 pl-4  border border-[#E7E9EB] rounded-xl">
         <label className=" text-base  font-normal text-black" htmlFor="">
           In the past ten (10) years, have you ever been convicted of a crime

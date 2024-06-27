@@ -10,32 +10,46 @@ import Disability from "./dashboard/Personel-info/Disability";
 import Tsr from "./dashboard/Personel-info/Tsr";
 import NonTsrCriminal from "./dashboard/Personel-info/NonTsrCriminal";
 import Veteran from "./dashboard/Personel-info/Veteran";
-import AddressHistory from "./dashboard/address-history/AddressHistory";
+import NavigationButtons from "./NavigationBtns";
+
+const steps = [
+  { id: "General", label: "General" },
+  { id: "Contact", label: "Contact" },
+  { id: "Emergency", label: "Emergency" },
+  { id: "Demographics", label: "Demographics" },
+  { id: "Disability", label: "Disability" },
+  { id: "Tsr", label: "TSR" },
+  { id: "NonTsrCriminal", label: "Non-TSR Criminal" },
+  { id: "Veteran", label: "Veteran Status" },
+];
+
+const stepTitles = {
+  General: "General Information",
+  Contact: "Contact Information",
+  Emergency: "Emergency Contact",
+  Demographics: "Demographics",
+  Disability: "Disability",
+  Tsr: "Transportation Security",
+  NonTsrCriminal: "Non-TSR Criminal",
+  Veteran: "Veteran Status",
+};
 
 const Stepper = () => {
-  const steps = [
-    { id: "General", label: "General" },
-    { id: "Contact", label: "Contact" },
-    { id: "Emergency", label: "Emergency" },
-    { id: "Demographics", label: "Demographics" },
-    { id: "Disability", label: "Disability" },
-    { id: "Tsr", label: "TSR" },
-    { id: "NonTsrCriminal", label: "Non-TSR Criminal" },
-    { id: "Veteran", label: "Veteran Status" },
-  ];
+  const [currentStep, setCurrentStep] = useState("General");
 
-  const stepTitles = {
-    General: "General Information",
-    Contact: "Contact Information",
-    Emergency: "Emergency Contact",
-    Demographics: "Demographics",
-    Disability: "Disability",
-    Tsr: "Transportation Security",
-    NonTsrCriminal: "Non-TSR Criminal",
-    Veteran: "Veteran Status",
+  const handleNext = () => {
+    const currentIndex = steps.findIndex((step) => step.id === currentStep);
+    if (currentIndex < steps.length - 1) {
+      setCurrentStep(steps[currentIndex + 1].id);
+    }
   };
 
-  const [currentStep, setCurrentStep] = useState("General");
+  const handleBack = () => {
+    const currentIndex = steps.findIndex((step) => step.id === currentStep);
+    if (currentIndex > 0) {
+      setCurrentStep(steps[currentIndex - 1].id);
+    }
+  };
 
   const getCurrentStepComponent = () => {
     switch (currentStep) {
@@ -59,6 +73,11 @@ const Stepper = () => {
         return <General />;
     }
   };
+
+  const currentIndex = steps.findIndex((step) => step.id === currentStep);
+  const nextLabel =
+    currentIndex < steps.length - 1 ? steps[currentIndex + 1].label : null;
+  const backLabel = currentIndex > 0 ? "Back" : null;
 
   return (
     <>
@@ -105,27 +124,12 @@ const Stepper = () => {
 
         {getCurrentStepComponent()}
 
-        <div className="mx-6 flex justify-end">
-          <button className="mt-4 py-2 px-3 rounded-lg flex items-center justify-end gap-1 bg-[#F0F7E2] border border-[#8FC521]">
-            Next:
-            <svg
-              width="16"
-              height="17"
-              viewBox="0 0 16 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8.66667 11.8333L12 8.49996L8.66667 5.16663M4 11.8333L7.33333 8.49996L4 5.16663"
-                stroke="#8FC521"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            {steps.find((step) => step.id === currentStep).label} Information
-          </button>
-        </div>
+        <NavigationButtons
+          nextLabel={nextLabel}
+          backLabel={backLabel}
+          onNext={handleNext}
+          onBack={handleBack}
+        />
       </div>
     </>
   );

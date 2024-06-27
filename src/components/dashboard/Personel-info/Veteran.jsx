@@ -4,7 +4,7 @@ import Input from "@/components/ui/InputField";
 
 const Veteran = () => {
   return (
-    <div className=" mt-5 pb-6 border-b border-[#E4E7EC] space-y-5">
+    <div className=" my-5 pb-6 border-b border-[#E4E7EC] space-y-5">
       <p className="  text-[#505D6F] text-base font-normal">
         You a considered to be a Protected Veteran if you believe you belong to
         any of the categories below:
@@ -53,7 +53,7 @@ const Veteran = () => {
       <div className=" w-fit">
         <Input type="date" label="Veteran Discharge Date*" />
       </div>
-
+      Yes
       <div className="  p-4  border border-[#E7E9EB] rounded-xl">
         <label className=" text-base  font-normal text-black" htmlFor="">
           One Selection is Required :
