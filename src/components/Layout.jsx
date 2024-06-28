@@ -10,9 +10,9 @@ const Layout = ({ children }) => {
       <Sidebar />
       <main className=" main">
         <Header />
-        <Main />
+        {/* <Main /> */}
         {/* <Companies /> */}
-        {/* {children} */}
+        {children}
       </main>
     </>
   );

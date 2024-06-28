@@ -1,6 +1,7 @@
 import ApplicationLinks from "@/components/companies/ApplicationLinks";
 import CompaniesTabs from "@/components/companies/CompaniesTabs";
 import DomicileMap from "@/components/companies/DomicileMap";
+import HiringRequirements from "@/components/companies/HiringRequirements";
 import InteractiveFleet from "@/components/companies/InteractiveFleet";
 import React, { useState } from "react";
 
@@ -16,7 +17,7 @@ const Companies = () => {
       case "RouteMap":
         return <InteractiveFleet />;
       case "HiringRequirments":
-        return <FurloughHistory />;
+        return <HiringRequirements />;
 
       default:
         return <ApplicationLinks />;

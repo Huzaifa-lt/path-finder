@@ -4,7 +4,7 @@ import ApplicationLinkCard from "./ApplicationLinkCard";
 
 const ApplicationLinks = () => {
   return (
-    <div>
+    <div className=" mb-6">
       <ApplicationLinkHeader />
 
       <div className=" mt-6 mx-6 space-y-8">

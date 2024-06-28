@@ -54,20 +54,11 @@ const Disability = () => {
         </div>
       </div>
 
-      {/* <label
-          //   className=" py-[7px] px-3.5   rounded-lg border border-[#E7E9EB] shadow-sm shadow-[#1018280D]"
-          htmlFor=""
-        >
-          Select one from the list below:
-        </label> */}
-
       <RadioBox
         label="Select one from the list below:"
         options={RadioOptions}
         questionClass=" text-black text-base"
       />
-      {/* <RadioBox label="No, I do not have a disability" />
-          <RadioBox label="I do not wish to answer" /> */}
     </div>
   );
 };
