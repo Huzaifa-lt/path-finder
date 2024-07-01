@@ -2,6 +2,7 @@ import React from "react";
 import RadioBox from "../../ui/RadioBox";
 import PhoneSelectField from "../../ui/PhoneSelectField";
 import SelectBox from "../../ui/SelectBox";
+import { countries } from "@/components/constants";
 
 const GeneralInfo = () => {
   const radioOptions = [
@@ -24,7 +25,7 @@ const GeneralInfo = () => {
             label="Years of College  *"
             placeholder="+1 (555) 000-0000"
           />
-          <SelectBox label="Highest Level of Education *" />
+          <SelectBox options={countries} label="Highest Level of Education *" />
           <PhoneSelectField
             label="Languages you speak fluently *"
             placeholder="+1 (555) 000-0000"
@@ -40,7 +41,7 @@ const GeneralInfo = () => {
             label="Formal Flight Training *"
             placeholder="+1 (555) 000-0000"
           />
-          <SelectBox label="What is your GPA Scale? *" />
+          <SelectBox options={countries} label="What is your GPA Scale? *" />
         </div>
         <div className="  mx-6  flex justify-end">
           <button className=" mt-4 py-2 px-3 rounded-lg  flex items-center justify-end gap-1 bg-[#F0F7E2] border border-[#8FC521] ">

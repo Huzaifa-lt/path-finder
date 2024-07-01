@@ -1,3 +1,4 @@
+import { countries, states } from "@/components/constants";
 import CheckBox from "@/components/ui/CheckBox";
 import { DatePicker } from "@/components/ui/DatePicker";
 import Input from "@/components/ui/InputField";
@@ -16,7 +17,7 @@ const InstructorCertificate = () => {
         label="Any Instructor certificates?"
       />
       <div className="py-5 border-b border-[#E4E7EC]  grid grid-cols-4 gap-x-3 gap-y-5 ">
-        <SelectBox label="ATP Certificate Number*" />
+        <SelectBox options={countries} label="ATP Certificate Number*" />
         <DatePicker label="Date of Issue*" />
 
         <RadioBox
@@ -87,18 +88,19 @@ const InstructorCertificate = () => {
           <h3 className="  px-4 pb-4 border-b border-[#E4E7EC] text-base font-medium text-black">
             Check all Type Ratings that apply
           </h3>
-          <div className=" px-4 mt-4 ">
+          <div className="p-4">
             <div className=" flex gap-4">
               <CheckBox label="Turbojet Airplane" />
               <CheckBox label="Large Aircraft Other than Lighter-than-Air" />
               <CheckBox label="B-737 Type Rating" />
             </div>
 
-            <div className=" mt-4">
-              <TextArea
-                label="List all awarded Type Ratings *"
-                placeholder="List all your awards..."
+            <div className=" mt-4 grid grid-cols-2 gap-x-4">
+              <SelectBox
+                options={states}
+                label="Ground School Instructor No.*"
               />
+              <DatePicker label="Date of Issue*" />
             </div>
           </div>
         </div>

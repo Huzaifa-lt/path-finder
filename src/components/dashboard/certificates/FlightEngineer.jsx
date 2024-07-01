@@ -20,8 +20,8 @@ const FlightEngineer = () => {
             Specify all types that apply*
           </h3>
           <div className=" px-4 mt-4 ">
-            <div className=" flex gap-4">
-              <DatePicker label="Flight Engineer Certificate*" />
+            <div className=" grid grid-cols-2 gap-x-4">
+              <DatePicker className="" label="Flight Engineer Certificate*" />
               <DatePicker label="Date of Issue*" />
             </div>
 

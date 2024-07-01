@@ -45,7 +45,7 @@ const Sidebar = () => {
         </div>
 
         <div className=" mt-6 px-4">
-          <div className="  w-full py-2 pl-3 bg-[#F0F7E2]  rounded-md flex items-center  gap-2 relative group ">
+          <div className="  w-full py-2 pl-3 bg-[#F0F7E2]  rounded-md flex items-center  gap-2 ">
             <div className=" ">
               <svg
                 width="20"
@@ -66,7 +66,6 @@ const Sidebar = () => {
             <a href="" className="text-black text-sm font-medium">
               Control Panel
             </a>
-            <span className=" w-1 h-10 bg-white absolute left-0  block "></span>
           </div>
           <div className=" w-full py-2 pl-3 flex items-center  gap-2 relative group ">
             <div className=" ">

@@ -34,14 +34,18 @@ const Veteran = () => {
         </li>
       </div>
       <div className="  py-4 pl-4  border border-[#E7E9EB] rounded-xl">
-        <label className=" text-base  font-normal text-black" htmlFor="">
+        {/* <label className=" text-base  font-normal text-black" htmlFor="">
           In the past ten (10) years, have you ever been convicted or found not
           guilty by reason of insanity of any of the above listed crimes?
         </label>
         <div className=" mt-4">
           <RadioBox label="Yes, I identify as one or more of the classifications of Protected Veteran listed above" />
           <RadioBox label="I choose not to self identify" />
-        </div>
+        </div> */}
+        <RadioBox
+          label=" In the past ten (10) years, have you ever been convicted or found not
+          guilty by reason of insanity of any of the above listed crimes?"
+        />
       </div>
       <p className="   text-[#505D6F] text-base font-normal">
         As a Government contractor subject to VEVRAA, we are required to submit

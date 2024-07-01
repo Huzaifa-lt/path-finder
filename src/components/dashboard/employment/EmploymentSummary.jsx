@@ -33,8 +33,11 @@ const EmploymentSummary = () => {
                   </svg>
                 </span>
               </TooltipTrigger>
-              <TooltipContent className=" bg-[#FCF3EB]" side="right">
-                <p className="text-[#DE7010] text-sm font-normal">
+              <TooltipContent
+                className=" bg-[#FCF3EB] border-none shadow-none"
+                side="right"
+              >
+                <p className="text-[#DE7010]  text-sm font-normal">
                   Note: It is not necessary to enter information
                   chronologically. It will automatically be chronologically
                   sorted in the Employment Summary.

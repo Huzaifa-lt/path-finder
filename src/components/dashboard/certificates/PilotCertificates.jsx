@@ -1,3 +1,4 @@
+import { AircraftTypeFilter } from "@/components/AircraftTypeFilter";
 import CheckBox from "@/components/ui/CheckBox";
 import { DatePicker } from "@/components/ui/DatePicker";
 import Input from "@/components/ui/InputField";
@@ -86,6 +87,10 @@ const PilotCertificates = () => {
             </span>
             Check all Categories that apply: (You must select at least one.)
           </p>
+        </div>
+
+        <div>
+          <AircraftTypeFilter />
         </div>
       </div>
 

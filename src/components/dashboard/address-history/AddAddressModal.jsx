@@ -4,10 +4,10 @@ import Input from "@/components/ui/InputField";
 import SelectBox from "@/components/ui/SelectBox";
 import React from "react";
 
-const EditAddressModal = () => {
+const AddAddressModal = () => {
   return (
     <div>
-      <h4 className=" text-xl font-medium text-black">Update address</h4>
+      <h4 className=" text-xl font-medium text-black">Add new address</h4>
       <div>
         <div className=" py-6 grid grid-cols-2 gap-x-3 gap-y-[21px] border-b border-[#E4E7EC] ">
           <Input type="text" label="Address  1*" />
@@ -24,7 +24,7 @@ const EditAddressModal = () => {
             Cancel
           </button>
           <button className=" py-2 px-3 w-full bg-[#8FC521] text-center shadow-sm shadow-[#1018280D] text-base font-normal text-white rounded-lg">
-            Update address
+            Add new address
           </button>
         </div>
       </div>
@@ -32,4 +32,4 @@ const EditAddressModal = () => {
   );
 };
 
-export default EditAddressModal;
+export default AddAddressModal;

@@ -1,5 +1,7 @@
 import React from "react";
 import FlyingSummaryTable from "./FlyingSummaryTable";
+import ImportFlightModal from "./ImportFlightModal";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 const FlyingSummary = () => {
   return (
@@ -10,26 +12,33 @@ const FlyingSummary = () => {
             <h2 className=" text-lg font-medium text-[#2E2E2E]">
               Flying Time Summary
             </h2>
-            <button className=" py-2 px-3 bg-[#8FC521] text-sm font-medium shadow-sm text-white shadow-[#1018280D] rounded-lg flex items-center gap-1 ">
-              <span>
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10.0001 4.16699V15.8337M4.16675 10.0003H15.8334"
-                    stroke="white"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-              Add Aircraft
-            </button>
+            <Dialog>
+              <DialogTrigger>
+                <button className=" py-2 px-3 bg-[#8FC521] text-sm font-medium shadow-sm text-white shadow-[#1018280D] rounded-lg flex items-center gap-1 ">
+                  <span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.0001 4.16699V15.8337M4.16675 10.0003H15.8334"
+                        stroke="white"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  Add Aircraft
+                </button>
+              </DialogTrigger>
+              <DialogContent className=" max-w-[560px]">
+                <ImportFlightModal />
+              </DialogContent>
+            </Dialog>
           </div>
 
           <p className=" mt-2 py-1.5 px-2 bg-[#FCF3EB] flex items-center gap-[5px] rounded-md text-[#DE7010] text-sm font-normal  ">

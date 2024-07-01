@@ -1,6 +1,12 @@
 import SelectBox from "@/components/ui/SelectBox";
 import React from "react";
 
+const AirplaneType = [{ label: "Airplane", value: "airplane" }];
+const TransportType = [
+  { label: "Single-Engine Land", value: "single" },
+  { label: "Military - Transport", value: "military" },
+];
+
 const UploadTable = () => {
   return (
     <table className=" w-full  ">
@@ -83,11 +89,13 @@ const UploadTable = () => {
           <td>
             <SelectBox
               className=" py-0.5 px-2 bg-[#F5FBF8] w-fit h-fit border-none gap-0.5 text-xs font-medium text-[#039855] rounded-2xl  "
+              options={AirplaneType}
               placeholder="Airplane"
             />
           </td>
           <td>
             <SelectBox
+              options={TransportType}
               placeholder="Military - Transport"
               className=" w-fit bg-transparent border-none font-medium text-[#667085]  gap-3 "
             />
@@ -185,11 +193,13 @@ const UploadTable = () => {
           <td>
             <SelectBox
               className=" py-0.5 px-2 bg-[#F5FBF8] w-fit h-fit border-none gap-0.5 text-xs font-medium text-[#039855] rounded-2xl  "
+              options={AirplaneType}
               placeholder="Airplane"
             />
           </td>
           <td>
             <SelectBox
+              options={TransportType}
               placeholder="Military - Transport"
               className=" w-fit bg-transparent border-none font-medium text-[#667085]  gap-3 "
             />
@@ -287,11 +297,13 @@ const UploadTable = () => {
           <td>
             <SelectBox
               className=" py-0.5 px-2 bg-[#F5FBF8] w-fit h-fit border-none gap-0.5 text-xs font-medium text-[#039855] rounded-2xl  "
+              options={AirplaneType}
               placeholder="Airplane"
             />
           </td>
           <td>
             <SelectBox
+              options={TransportType}
               placeholder="Military - Transport"
               className=" w-fit bg-transparent border-none font-medium text-[#667085]  gap-3 "
             />
@@ -389,11 +401,13 @@ const UploadTable = () => {
           <td>
             <SelectBox
               className=" py-0.5 px-2 bg-[#F5FBF8] w-fit h-fit border-none gap-0.5 text-xs font-medium text-[#039855] rounded-2xl  "
+              options={AirplaneType}
               placeholder="Airplane"
             />
           </td>
           <td>
             <SelectBox
+              options={TransportType}
               placeholder="Military - Transport"
               className=" w-fit bg-transparent border-none font-medium text-[#667085]  gap-3 "
             />
@@ -491,11 +505,13 @@ const UploadTable = () => {
           <td>
             <SelectBox
               className=" py-0.5 px-2 bg-[#F5FBF8] w-fit h-fit border-none gap-0.5 text-xs font-medium text-[#039855] rounded-2xl  "
+              options={AirplaneType}
               placeholder="Airplane"
             />
           </td>
           <td>
             <SelectBox
+              options={TransportType}
               placeholder="Military - Transport"
               className=" w-fit bg-transparent border-none font-medium text-[#667085]  gap-3 "
             />

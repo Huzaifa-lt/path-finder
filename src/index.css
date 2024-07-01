@@ -73,6 +73,21 @@
     body {
       @apply bg-background text-foreground;
     }
+    
+    ::-webkit-scrollbar {
+      width: 12px; /* Width of the scrollbar */
+       display: none;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background-color: #AFD661; /* Color of the thumb */
+      border-radius: 10px; /* Roundness of the thumb */
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; /* Color of the track */
+    }
+    
     .main{
       width: calc(100% - 280px );
       /* height: calc(100% + 63px); */

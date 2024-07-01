@@ -1,16 +1,19 @@
+import { countries, states } from "@/components/constants";
 import CheckBox from "@/components/ui/CheckBox";
 import { DatePicker } from "@/components/ui/DatePicker";
 import Input from "@/components/ui/InputField";
-import RadioBox from "@/components/ui/RadioBox";
+import RadioBox, { radioOptions } from "@/components/ui/RadioBox";
 import SelectBox from "@/components/ui/SelectBox";
 import TextArea from "@/components/ui/TextArea";
 import React from "react";
 
+const leavingReason = [
+  { label: "Part 121 Carrier", value: "121 Carrier" },
+  { label: "Part 121 Carrier", value: "121 Carrier" },
+  { label: "Part 121 Carrier", value: "121 Carrier" },
+];
+
 const CurrentEmployment = () => {
-  const radioOptions = [
-    { label: "Yes", value: "yes" },
-    { label: "No", value: "no" },
-  ];
   return (
     <div className=" pt-6 px-6 pb-5 border border-[#E4E7EC] rounded-lg">
       <h2 className=" pb-6 text-xl font-medium text-black border-b border-[#E4E7EC]">
@@ -22,12 +25,12 @@ const CurrentEmployment = () => {
         <div className=" grid grid-cols-4 gap-x-3 gap-y-[21px]">
           <Input type="text" label="Employer Name *" />
           <Input type="text" label="Employer Name *" />
-          <SelectBox label="Supervisor Name & Title*" />
+          <SelectBox options={leavingReason} label="Supervisor Name & Title*" />
           <Input type="text" label="Employer Address*" />
           <Input type="text" label="City*" />
-          <SelectBox label="State*" />
+          <SelectBox options={states} label="State*" />
           <Input type="number" label="Zip Code*" />
-          <SelectBox label="Country*" />
+          <SelectBox options={countries} label="Country*" />
           <Input type="number" label="Phone*" />
         </div>
       </div>
@@ -73,7 +76,7 @@ const CurrentEmployment = () => {
           <DatePicker label="From Date*" />
           <DatePicker label="To Date*" />
 
-          <SelectBox label="Reason for Leaving  *" />
+          <SelectBox options={leavingReason} label="Reason for Leaving  *" />
 
           <RadioBox
             options={radioOptions}

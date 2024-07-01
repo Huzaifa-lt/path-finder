@@ -1,3 +1,4 @@
+import { states } from "@/components/constants";
 import CheckBox from "@/components/ui/CheckBox";
 import { DatePicker } from "@/components/ui/DatePicker";
 import Input from "@/components/ui/InputField";
@@ -18,7 +19,7 @@ const RefrencesPopup = () => {
         <Input type="number" label="Employee ID  *" />
         <Input type="text" label="Address *" />
         <Input type="text" label="City*" />
-        <SelectBox label="State  *" />
+        <SelectBox options={states} label="State  *" />
         <Input type="number" label="Zip Code*" />
         <Input type="text" label="Position*" />
         <Input type="number" label="Phone*" />

@@ -1,3 +1,4 @@
+import { states } from "@/components/constants";
 import { DatePicker } from "@/components/ui/DatePicker";
 import Input from "@/components/ui/InputField";
 import RadioBox from "@/components/ui/RadioBox";
@@ -30,7 +31,7 @@ const FlyingTotal = () => {
             <Input type="text" label="Airplane MEL*" />
             <Input type="text" label="Airplane MES*" />
             <Input type="text" label="Airplane Multi-Engine*" />
-            <SelectBox label="Helicopter*" />
+            <SelectBox options={states} label="Helicopter*" />
           </div>
         </div>
         <div className="   pb-6 border-b border-[#E4E7EC]">

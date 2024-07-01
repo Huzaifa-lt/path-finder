@@ -31,7 +31,7 @@ const Flying = () => {
     <div>
       <FlyingTabs currentTab={currentTab} onTabClick={setCurrentTab} />
       <div className="mt-5 mx-6">{renderContent()}</div>
-      <NavigationButtons />
+      <NavigationButtons nextLabel="" />
     </div>
   );
 };

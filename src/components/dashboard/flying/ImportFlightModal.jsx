@@ -1,31 +1,14 @@
 import SelectBox from "@/components/ui/SelectBox";
 import React from "react";
 import { Progress } from "@/components/ui/progress";
-import { states } from "@/components/constants";
 
-const UploadModal = () => {
+const ImportFlightModal = () => {
   return (
     <div>
-      <h4 className=" pb-6 border-b border-[#E4E7EC] text-xl font-medium text-black ">
-        Upload documents
+      <h4 className="  text-xl leading-6  font-medium text-black ">
+        Import Flight Data
       </h4>
       <div className=" mt-6 space-y-3">
-        <div className=" flex gap-3 justify-between items-center">
-          <div className=" flex-grow">
-            <SelectBox
-              options={states}
-              label="Select document type"
-              placeholder="Interview document"
-            />
-          </div>
-          <div className=" flex-grow">
-            <SelectBox
-              options={states}
-              label="Select airline"
-              placeholder="Emirates"
-            />
-          </div>
-        </div>
         <div className=" py-4 px-6 bg-white rounded-lg border border-[#E7E9EB] flex flex-col gap-3 items-center text-center">
           <div className="  py-[12.5px] px-[10.83px] w-fit rounded-full bg-[#F2F4F7] border-[6px] border-[#F9FAFB] cursor-pointer">
             <svg
@@ -132,4 +115,4 @@ const UploadModal = () => {
   );
 };
 
-export default UploadModal;
+export default ImportFlightModal;

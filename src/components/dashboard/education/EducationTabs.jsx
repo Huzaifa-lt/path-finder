@@ -4,7 +4,6 @@ const EducationTabs = ({ currentTab, onTabClick }) => {
   const tabs = [
     { name: "Education Summary", id: "EducationSummary" },
     { name: "General", id: "GeneralInfo" },
-    { name: "Education", id: "EducationDetail" },
     { name: "Achievements", id: "Achievements" },
   ];
 

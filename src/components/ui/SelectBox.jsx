@@ -1,13 +1,4 @@
 import React from "react";
-// import {
-//   Select,
-//   SelectContent,
-//   SelectGroup,
-//   SelectItem,
-//   SelectLabel,
-//   SelectTrigger,
-//   SelectValue,
-// } from "../../../@/components/ui/select";
 import {
   Select,
   SelectContent,
@@ -16,7 +7,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const SelectBox = ({ label, className, placeholder }) => {
+const SelectBox = ({ label, className, placeholder, options }) => {
   return (
     <div className="  flex flex-col">
       <label className="mb-1.5 text-sm font-normal text-[#344054]" htmlFor="">
@@ -27,27 +18,14 @@ const SelectBox = ({ label, className, placeholder }) => {
           <SelectValue placeholder={placeholder} />
         </SelectTrigger>
         <SelectContent>
-          <SelectItem value="light">Light</SelectItem>
-          <SelectItem value="dark">Dark</SelectItem>
-          <SelectItem value="system">System</SelectItem>
+          {options.map((item, index) => (
+            <SelectItem key={index} value={item.value}>
+              {item.label}
+            </SelectItem>
+          ))}
         </SelectContent>
       </Select>
     </div>
-    // <Select>
-    //   <SelectTrigger className="w-[180px]">
-    //     <SelectValue placeholder="---" />
-    //   </SelectTrigger>
-    //   <SelectContent>
-    //     <SelectGroup>
-    //       <SelectLabel>Fruits</SelectLabel>
-    //       <SelectItem value="apple">Apple</SelectItem>
-    //       <SelectItem value="banana">Banana</SelectItem>
-    //       <SelectItem value="blueberry">Blueberry</SelectItem>
-    //       <SelectItem value="grapes">Grapes</SelectItem>
-    //       <SelectItem value="pineapple">Pineapple</SelectItem>
-    //     </SelectGroup>
-    //   </SelectContent>
-    // </Select>
   );
 };
 

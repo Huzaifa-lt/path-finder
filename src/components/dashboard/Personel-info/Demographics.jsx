@@ -3,6 +3,30 @@ import RadioBox from "@/components/ui/RadioBox";
 import SelectBox from "@/components/ui/SelectBox";
 import { DatePicker } from "@/components/ui/DatePicker";
 
+
+const genders = [
+  { label: "Male", value: "male" },
+  { label: "Female", value: "female" },
+  { label: "Others", value: "others" },
+];
+
+const ethnics = [
+  {
+    label: "American Indian / Alaska Native",
+    value: "natives",
+  },
+  { label: "Asian", value: "asian" },
+  {
+    label: "Black / African American",
+    value: "black",
+  },
+  {
+    label: "Hispanic / Latino",
+    value: "hispanic",
+  },
+  { label: "White", value: "white" },
+];
+
 const Demographics = () => {
   const radioOptions = [
     { label: "Yes", value: "yes" },
@@ -30,9 +54,9 @@ const Demographics = () => {
         className=" mt-5 grid grid-cols-3 gap-x-3
          "
       >
-        <SelectBox label="Gender *" />
+        <SelectBox options={genders} label="Gender *" />
         <DatePicker label="Date of Birth *" />
-        <SelectBox label="Race and Ethnic Identification *" />
+        <SelectBox options={ethnics} label="Race and Ethnic Identification *" />
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import Input from "@/components/ui/InputField";
 import PhoneSelectField from "@/components/ui/PhoneSelectField";
 import SelectBox from "@/components/ui/SelectBox";
+import { states } from "@/components/constants";
 
 const Emergency = () => {
   return (
@@ -12,7 +13,7 @@ const Emergency = () => {
       <Input type="text" label="Relationship  * " />
       <Input type="text" label="Address*" />
       <Input type="text" label="City *" />
-      <SelectBox label="State*" />
+      <SelectBox options={states} label="State*" />
       <Input type="number" label="Zip code  * " />
       <PhoneSelectField
         label="Primary phone*"

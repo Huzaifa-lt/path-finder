@@ -1,3 +1,4 @@
+import { countries } from "@/components/constants";
 import Input from "@/components/ui/InputField";
 import RadioBox, { radioOptions } from "@/components/ui/RadioBox";
 import SelectBox from "@/components/ui/SelectBox";
@@ -10,13 +11,6 @@ const FlyingExperience = () => {
 
       <div className="mt-4 space-y-6">
         <div className="  pb-6 border-b border-[#E4E7EC]">
-          {/* <label htmlFor="" className=" text-sm font-normal text-[#475467]">
-            Military Experience?
-          </label>
-          <div className=" mt-3 flex  items-center gap-4">
-            <RadioBox label="Yes" />
-            <RadioBox label="No" />
-          </div> */}
           <RadioBox
             borderNone
             options={radioOptions}
@@ -39,7 +33,10 @@ const FlyingExperience = () => {
             <Input type="text" label="SIC*" />
             <Input type="text" label="Dual Rec/Student*" />
             <Input type="text" label="Total*" />
-            <SelectBox label="Turbine Powered  (Pilot Only)*" />
+            <SelectBox
+              options={countries}
+              label="Turbine Powered  (Pilot Only)*"
+            />
             <Input type="text" label="Multi- Engine (Pilot Only)*" />
           </div>
         </div>
